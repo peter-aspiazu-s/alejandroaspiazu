@@ -1,42 +1,73 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-color: #0056b3;
+  --accent-color: #ffc107;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.hero {
+  /* Imagen de fondo */
+  background: url('/images/su-mejor-alternativa-para-la-automatizacion-de-puertas-en-vigo.jpg') no-repeat center center;
+  background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+  background-attachment: scroll; /* Opcional: fixed si quieres un efecto parallax */
+
+  /* Degradado superpuesto (opcional, para mejorar legibilidad del texto) */
+  background-image: linear-gradient(rgba(0, 63, 125, 0.7), rgba(0, 86, 179, 0.7)), url('/images/su-mejor-alternativa-para-la-automatizacion-de-puertas-en-vigo.jpg');
+
+  color: white; /* Color del texto dentro de la sección hero */
+  padding: 5rem 1rem; /* Espaciado interno */
+
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.section-bg-light {
+  background-color: #f8f9fa;
+  padding: 4rem 1rem;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.section-bg-white {
+  background-color: white;
+  padding: 4rem 1rem;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.btn-accent {
+  background-color: var(--accent-color);
+  border: none;
+  color: black;
 }
 
-a {
-  color: inherit;
+.btn-accent:hover {
+  background-color: #e0a800;
+  color: black;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-float a {
+  background-color: #25D366;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.whatsapp-float i {
+  margin-right: 8px;
+}
+
+footer {
+  background-color: #212529;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
 }
