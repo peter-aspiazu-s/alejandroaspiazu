@@ -26,7 +26,7 @@ export async function POST(request) {
     // 3. Opciones del correo electrónico a enviar
     const mailOptions = {
       from: process.env.EMAIL_USER, // El remitente (generalmente tu propio correo de Gmail)
-      to: 'aspiazusa@gmail.com', // El correo al que deseas recibir los mensajes
+      to: 'aspiazu.alex@gmail.com', // El correo al que deseas recibir los mensajes
       subject: `Nuevo mensaje de contacto de: ${nombre}`,
       html: `
         <h2>Mensaje del formulario de contacto</h2>
