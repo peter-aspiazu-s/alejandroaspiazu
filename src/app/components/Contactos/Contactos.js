@@ -77,11 +77,11 @@ export const Contactos = () => {
                 <div className="row g-4">
                     <div className="col-md-6">
                         <h5>Información de Contacto</h5>
-                        <p><i className="bi bi-telephone-fill"></i> <strong>Tel:</strong><a href="tel:+593992867230"> +593 99 286 7230</a></p>
-                        <p><i className="bi bi-envelope-fill"></i> <strong>Email:</strong> aspiazu.alex@gmail.com</p>
+                        <p><i className="bi bi-telephone-fill"></i> <strong>Tel:</strong><a href="tel:+593960067820"> +593 96 006 7820</a></p>
+                        <p><i className="bi bi-envelope-fill"></i> <strong>Email:</strong><a href="mailto:paspiazusabando@gmail.com"> paspiazusabando@gmail.com</a></p>
                         <p><i className="bi bi-geo-alt-fill"></i> <strong>Dirección:</strong> Guayaquil, Ecuador</p>
                         <div className="mt-3">
-                            <a href="https://wa.link/pkvimu" className="me-3"><i className="bi bi-whatsapp" style={{ fontSize: "1.5rem;" }}></i></a>
+                            <a href="https://wa.link/4ajisn" className="me-3"><i className="bi bi-whatsapp" style={{ fontSize: "1.5rem;" }}></i></a>
                         </div>
                     </div>
                     <div className="col-md-6">
@@ -134,10 +134,10 @@ export const Contactos = () => {
 
                             <div className="text-center mt-4">
                                 <p>¿Prefieres contacto directo?</p>
-                                <a href="tel:+593992867230" className="btn btn-outline-dark me-2">
+                                <a href="tel:+593960067820" className="btn btn-outline-dark me-2">
                                     <i className="bi bi-telephone-fill"></i> Llamar
                                 </a>
-                                <a href="https://wa.link/pkvimu" target="_blank" className="btn btn-success">
+                                <a href="https://wa.link/4ajisn" target="_blank" className="btn btn-success">
                                     <i className="bi bi-whatsapp"></i> WhatsApp
                                 </a>
                             </div>

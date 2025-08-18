@@ -1,5 +1,6 @@
 import { Beneficios } from "./components/Beneficios/Beneficios";
 import { CallToAction } from "./components/CallToAction/CallToAction";
+import { CategoriasMotores } from "./components/CategoriasMotores/CategoriasMotores";
 import { Contactos } from "./components/Contactos/Contactos";
 import { Hero } from "./components/Hero/Hero";
 import { Marcas } from "./components/Marcas/Marcas";
@@ -14,6 +15,7 @@ export default function Home() {
       <Motores />
       <CallToAction />
       <Beneficios />
+      <CategoriasMotores />
       <TrabajosRealizados />
       <Contactos />
       <Youtube />

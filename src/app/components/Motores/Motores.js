@@ -5,21 +5,30 @@ export const Motores = () => {
     <section id="motores" className="section-bg-light">
         <div className="container">
             <div className="row align-items-center g-5">
-                <div className="col-md-6">
-                    <h2>Soluciones a Medida para tu Portón Corredizo</h2>
-                    <p>Ofrecemos motores con cremallera (ideal) y con cadena (alternativa viable si cremallera no es
-                        factible), ambos robustos y efectivos.</p>
+                <div class="col-md-6">
+                    <h2>Motores para Puertas de Garaje y Portones Industriales</h2>
+                    <p>
+                        Contamos con equipos especializados para la automatización de portones
+                        industriales y puertas de garaje. Según el tipo, tamaño y uso de su puerta,
+                        le recomendamos el motor más adecuado para garantizar rendimiento y
+                        durabilidad.
+                    </p>
                     <ul>
-                        <li><strong>Residencial:</strong> Para hogares, comodidad y seguridad diaria.</li>
-                        <li><strong>Industrial:</strong> Alto tráfico (ciudadelas/industrias), rendimiento superior.
-                        </li>
+                        <li><strong>Residencial:</strong> Diseñados para hogares, brindan seguridad, 
+                            confort y facilidad en el uso diario.</li>
+                        <li><strong>Industrial:</strong> Ideales para zonas de alto tráfico como 
+                            conjuntos, ciudadelas o industrias, ofreciendo potencia y máxima resistencia.</li>
                     </ul>
-                    <h5 className="mt-4">Marcas que confiamos:</h5>
+                    <h5 class="mt-4">Marcas que ofrecemos:</h5>
                     <ul>
-                        <li><strong>Garen:</strong> Ideal para uso residencial.</li>
-                        <li><strong>Roger y Came:</strong> Para uso intensivo en ciudadelas e industrias.</li>
+                        <li><strong>Impervious:</strong> Opciones para uso residencial e industrial.</li>
+                        <li><strong>Garen:</strong> Amplia gama de soluciones para viviendas y empresas.</li>
+                        <li><strong>Roger:</strong> Motores de alto desempeño para todo tipo de portón.</li>
+                        <li><strong>Came:</strong> Reconocida por su durabilidad tanto en hogares como en industrias.</li>
+                        <li><strong>Elsamec:</strong> Sistemas confiables con versiones para uso residencial e intensivo.</li>
                     </ul>
                 </div>
+
                 <div className="col-md-6">
                     <div id="carouselMotores" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-inner rounded shadow-sm">
