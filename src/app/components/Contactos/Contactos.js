@@ -1,151 +1,186 @@
 "use client";
 
-import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+
+import { useState } from "react";
 
 export const Contactos = () => {
+  const [formData, setFormData] = useState({
+    nombre: "",
+    correo: "",
+    mensaje: "",
+  });
 
-    // 1. Estado para los campos del formulario
-    const [formData, setFormData] = useState({
-        nombre: '',
-        correo: '',
-        mensaje: '',
-    });
+  const [responseMessage, setResponseMessage] = useState("");
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-    // 2. Estado para el mensaje de respuesta (éxito o error)
-    const [responseMessage, setResponseMessage] = useState('');
-    const [isSuccess, setIsSuccess] = useState(false); // Para mostrar el mensaje con estilo de éxito o error
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
 
-    // NUEVO ESTADO: Para controlar si el formulario se está enviando
-    const [isSubmitting, setIsSubmitting] = useState(false);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setResponseMessage("Enviando...");
+    setIsSuccess(false);
 
-    // 3. Manejador de cambios para actualizar el estado cuando el usuario escribe
-    const handleChange = (e) => {
-        const { id, value } = e.target;
-        setFormData((prevData) => ({
-            ...prevData,
-            [id]: value, // Actualiza la propiedad correcta (nombre, correo, mensaje)
-        }));
-    };
+    try {
+      const response = await fetch("/api/contacto", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    // 4. Manejador del envío del formulario
-    const handleSubmit = async (e) => {
-        e.preventDefault(); // Evita el comportamiento por defecto de recargar la página
+      const data = await response.json();
 
-        // Deshabilita el botón al inicio del envío
-        setIsSubmitting(true);
+      if (response.ok) {
+        setResponseMessage(data.message || "Mensaje enviado exitosamente.");
+        setIsSuccess(true);
+        setFormData({ nombre: "", correo: "", mensaje: "" });
+      } else {
+        setResponseMessage(data.message || "Error al enviar el mensaje.");
+        setIsSuccess(false);
+      }
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
+      setResponseMessage("Error de conexión. Intente más tarde.");
+      setIsSuccess(false);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
-        setResponseMessage('Enviando...'); // Muestra un mensaje de carga
-        setIsSuccess(false); // Resetea el estado del mensaje
+  return (
+    <section id="contacto" className="bg-gray-50 py-16">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold">¿Listo para un Acceso Más Inteligente?</h2>
+          <p className="text-lg text-gray-600">Contáctanos y recibe asesoría personalizada</p>
+        </div>
 
-        try {
-            const response = await fetch('/api/contacto', { // La URL de tu API Route
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData), // Envía los datos del formulario como JSON
-            });
-
-            const data = await response.json(); // Parsea la respuesta del servidor
-
-            if (response.ok) { // Si la respuesta HTTP es 2xx (éxito)
-                setResponseMessage(data.message || 'Mensaje enviado exitosamente.');
-                setIsSuccess(true);
-                setFormData({ nombre: '', correo: '', mensaje: '' }); // Limpia el formulario
-            } else { // Si la respuesta HTTP es un error (ej. 400, 500)
-                setResponseMessage(data.message || 'Error al enviar el mensaje. Inténtalo de nuevo.');
-                setIsSuccess(false);
-            }
-        } catch (error) {
-            console.error('Error al enviar el formulario:', error);
-            setResponseMessage('Error de conexión. Por favor, intente más tarde.');
-            setIsSuccess(false);
-        } finally {
-            // Habilita el botón de nuevo, sin importar el resultado
-            setIsSubmitting(false);
-        }
-    };
-
-    return (
-        // CONTACTO
-        <section id="contacto" className="section-bg-light">
-            <div className="container">
-                <div className="text-center mb-5">
-                    <h2>¿Listo para un Acceso Más Inteligente?</h2>
-                    <p className="lead">Contáctanos y recibe asesoría personalizada</p>
-                </div>
-                <div className="row g-4">
-                    <div className="col-md-6">
-                        <h5>Información de Contacto</h5>
-                        <p><i className="bi bi-telephone-fill"></i> <strong>Tel:</strong><a href="tel:+593960067820"> +593 96 006 7820</a></p>
-                        <p><i className="bi bi-envelope-fill"></i> <strong>Email:</strong><a href="mailto:paspiazusabando@gmail.com"> paspiazusabando@gmail.com</a></p>
-                        <p><i className="bi bi-geo-alt-fill"></i> <strong>Dirección:</strong> Guayaquil, Ecuador</p>
-                        <div className="mt-3">
-                            <a href="https://wa.link/4ajisn" className="me-3"><i className="bi bi-whatsapp" style={{ fontSize: "1.5rem;" }}></i></a>
-                        </div>
-                    </div>
-                    <div className="col-md-6">
-                        <form onSubmit={handleSubmit}>
-                            <div className="mb-3">
-                                <label htmlFor="nombre" className="form-label">Nombre</label>
-                                <input 
-                                    type="text" 
-                                    className="form-control"
-                                    id="nombre" 
-                                    name="nombre"
-                                    value={formData.nombre}
-                                    onChange={handleChange}
-                                    required 
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="correo" className="form-label">Correo electrónico</label>
-                                <input 
-                                    type="email" 
-                                    className="form-control" 
-                                    id="correo"
-                                    name="correo"
-                                    value={formData.correo}
-                                    onChange={handleChange}
-                                    required 
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="mensaje" className="form-label">Mensaje</label>
-                                <textarea 
-                                    className="form-control" 
-                                    id="mensaje" 
-                                    rows="4"
-                                    name="mensaje" 
-                                    value={formData.mensaje}
-                                    onChange={handleChange}
-                                    required></textarea>
-                            </div>
-                            <button type="submit" className="btn btn-accent" disabled={isSubmitting}>
-                                {isSubmitting ? 'Enviando...' : 'Enviar Consulta'}
-                            </button>
-
-                            {/* Mensaje de respuesta */}
-                            {responseMessage && (
-                                <div className={`alert mt-3 ${isSuccess ? 'alert-success' : 'alert-danger'}`} role="alert">
-                                {responseMessage}
-                                </div>
-                            )}
-
-                            <div className="text-center mt-4">
-                                <p>¿Prefieres contacto directo?</p>
-                                <a href="tel:+593960067820" className="btn btn-outline-dark me-2">
-                                    <i className="bi bi-telephone-fill"></i> Llamar
-                                </a>
-                                <a href="https://wa.link/4ajisn" target="_blank" className="btn btn-success">
-                                    <i className="bi bi-whatsapp"></i> WhatsApp
-                                </a>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
+        <div className="grid md:grid-cols-2 gap-10">
+          {/* Información de contacto */}
+          <div>
+            <h5 className="text-xl font-semibold mb-4">Información de Contacto</h5>
+            <p className="mb-2">
+              📞 <strong>Tel:</strong>{" "}
+              <a href="tel:+593960067820" className="text-blue-600 hover:underline">
+                +593 96 006 7820
+              </a>
+            </p>
+            <p className="mb-2">
+              📧 <strong>Email:</strong>{" "}
+              <a href="mailto:paspiazusabando@gmail.com" className="text-blue-600 hover:underline">
+                paspiazusabando@gmail.com
+              </a>
+            </p>
+            <p className="mb-2">📍 <strong>Dirección:</strong> Guayaquil, Ecuador</p>
+            <div className="mt-4">
+              <a
+                href="https://wa.link/4ajisn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-green-500 hover:text-green-600 text-2xl"
+              >
+                <FontAwesomeIcon icon={faWhatsapp} size="lg" />
+              </a>
             </div>
-        </section>
-    )
-}
+          </div>
+
+          {/* Formulario */}
+          <div>
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div>
+                <label htmlFor="nombre" className="block font-medium mb-1">
+                  Nombre
+                </label>
+                <input
+                  type="text"
+                  id="nombre"
+                  value={formData.nombre}
+                  onChange={handleChange}
+                  required
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="correo" className="block font-medium mb-1">
+                  Correo electrónico
+                </label>
+                <input
+                  type="email"
+                  id="correo"
+                  value={formData.correo}
+                  onChange={handleChange}
+                  required
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="mensaje" className="block font-medium mb-1">
+                  Mensaje
+                </label>
+                <textarea
+                  id="mensaje"
+                  rows={4}
+                  value={formData.mensaje}
+                  onChange={handleChange}
+                  required
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition disabled:opacity-50"
+              >
+                {isSubmitting ? "Enviando..." : "Enviar Consulta"}
+              </button>
+
+              {/* Mensaje de respuesta */}
+              {responseMessage && (
+                <div
+                  className={`mt-3 p-3 rounded-lg text-center ${
+                    isSuccess ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"
+                  }`}
+                >
+                  {responseMessage}
+                </div>
+              )}
+
+              <div className="text-center mt-6">
+                <p className="mb-3 text-gray-600">¿Prefieres contacto directo?</p>
+                <div className="flex justify-center gap-4">
+                  <a
+                    href="tel:+593960067820"
+                    className="px-5 py-2 border-2 border-gray-700 rounded-lg hover:bg-gray-700 hover:text-white transition"
+                  >
+                    <FontAwesomeIcon icon={faPhone} size="lg" /> Llamar
+                  </a>
+                  <a
+                    href="https://wa.link/4ajisn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition"
+                  >
+                    <FontAwesomeIcon icon={faWhatsapp} size="lg" /> WhatsApp
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};

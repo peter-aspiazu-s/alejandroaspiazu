@@ -1,70 +1,80 @@
+"use client"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation, Pagination } from "swiper/modules"
+
+import Image from "next/image"
+
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+
+const images = [
+  { src: "/images/su-mejor-alternativa-para-la-automatizacion-de-puertas-en-vigo.jpg", alt: "Beneficio 1" },
+  { src: "/images/liftmaster_hero.webp", alt: "Beneficio 2" },
+  { src: "/images/porton-corredizo-moderno.jpg", alt: "Beneficio 3" },
+  { src: "/images/pivotante.jpg", alt: "Beneficio 4" },
+]
 
 export const Beneficios = () => {
   return (
-    // <!-- BENEFICIOS -->
-    <section id="beneficios" className="section-bg-white">
-        <div className="container">
-            <div className="row align-items-center g-5">
-
-            {/* <!-- Carrusel de imágenes --> */}
-            <div className="col-md-6">
-                <div id="carouselBeneficios" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-inner rounded shadow-sm">
-                    <div className="carousel-item active">
-                    <img src="/images/su-mejor-alternativa-para-la-automatizacion-de-puertas-en-vigo.jpg"
-                        className="d-block w-100" alt="Beneficio 1" />
-                    </div>
-                    <div className="carousel-item">
-                    <img src="/images/baner-motores-de-garaje.webp"
-                        className="d-block w-100" alt="Beneficio 2" />
-                    </div>
-                    <div className="carousel-item">
-                    <img src="/images/c3dbdb9126cf875e9afe6190dff2524911395ef2.jpg"
-                        className="d-block w-100" alt="Beneficio 3" />
-                    </div>
+    <section id="beneficios" className="py-20 bg-white">
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        
+        {/* Carrusel de imágenes */}
+        <div className="w-full">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            navigation
+            pagination={{ clickable: true }}
+            loop
+            className="rounded-lg shadow-lg"
+          >
+            {images.map((img, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="relative w-full h-80 md:h-96">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    className="object-contain rounded-lg"
+                    priority={idx === 0} // optimiza la primera
+                  />
                 </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselBeneficios"
-                    data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon"></span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselBeneficios"
-                    data-bs-slide="next">
-                    <span className="carousel-control-next-icon"></span>
-                </button>
-                </div>
-            </div>
-
-            {/* <!-- Texto de beneficios --> */}
-            <div className="col-md-6">
-                <h2>Beneficios Reales de Automatizar tu Portón</h2>
-                <p>
-                La automatización de portones no es solo un detalle moderno o estético, 
-                es una mejora práctica que impacta directamente en tu día a día. 
-                Estas son algunas de las ventajas más importantes:
-                </p>
-                <ul>
-                <li>
-                    <strong>Ahorro de tiempo:</strong> Olvídate de bajarte del auto para abrir o cerrar tu puerta. 
-                    Con un clic entras y sales sin interrupciones.
-                </li>
-                <li>
-                    <strong>Seguridad reforzada:</strong> Muchas veces los ladrones aprovechan cuando alguien 
-                    se detiene a abrir su portón. Con un sistema automático, permaneces dentro de tu vehículo 
-                    y reduces significativamente ese riesgo.
-                </li>
-                <li>
-                    <strong>Más privacidad:</strong> Ya no necesitas manipular la puerta manualmente ni exponerte 
-                    frente a vecinos o transeúntes, tu acceso se mantiene discreto.
-                </li>
-                <li>
-                    <strong>Accesibilidad para todos:</strong> En hogares con personas mayores, con movilidad reducida 
-                    o con portones pesados, este tipo de equipos es una verdadera ayuda al evitar esfuerzos innecesarios.
-                </li>
-                </ul>
-            </div>
-            </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-    </section>
 
+        {/* Texto de beneficios */}
+        <div>
+          <h2 className="text-3xl font-bold mb-4 text-gray-800">
+            Beneficios Reales de Automatizar tu Portón
+          </h2>
+          <p className="text-gray-600 mb-6">
+            La automatización de portones no es solo un detalle moderno o estético, 
+            es una mejora práctica que impacta directamente en tu día a día. 
+            Estas son algunas de las ventajas más importantes:
+          </p>
+          <ul className="space-y-4 text-gray-700">
+            <li>
+              <strong>Ahorro de tiempo:</strong> Olvídate de bajarte del auto para abrir o cerrar tu puerta. 
+              Con un clic entras y sales sin interrupciones.
+            </li>
+            <li>
+              <strong>Seguridad reforzada:</strong> Los ladrones suelen aprovechar cuando alguien se detiene a abrir su portón. 
+              Con un sistema automático, permaneces dentro de tu vehículo y reduces ese riesgo.
+            </li>
+            <li>
+              <strong>Más privacidad:</strong> Ya no necesitas manipular la puerta manualmente ni exponerte frente a vecinos o transeúntes. 
+              Tu acceso se mantiene discreto.
+            </li>
+            <li>
+              <strong>Accesibilidad para todos:</strong> En hogares con personas mayores, con movilidad reducida 
+              o con portones pesados, este tipo de equipos es una verdadera ayuda al evitar esfuerzos innecesarios.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   )
 }

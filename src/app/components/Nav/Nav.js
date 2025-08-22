@@ -1,22 +1,173 @@
+"use client"
+import { useState } from "react"
 import Link from "next/link"
 
 export const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  const [dropdownOpen, setDropdownOpen] = useState(false)
+
   return (
-    // NAV 
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container">
-            <Link className="navbar-brand fw-bold" href="/">Alejandro Aspiazu</Link>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul className="navbar-nav">
-                    <li className="nav-item"><a className="nav-link" href="#motores">Motores</a></li>
-                    <li className="nav-item"><a className="nav-link" href="#beneficios">Beneficios</a></li>
-                    <li className="nav-item"><a className="btn btn-accent" href="#contacto">Contáctanos</a></li>
+    <nav className="bg-navbar-dark text-white relative">
+      <div className="container mx-auto px-2 md:px-4 flex flex-nowrap items-center justify-between h-16">
+        {/* Logo con flex-shrink-0 */}
+        <Link href="/" className="text-lg font-bold flex-shrink-0">
+          Deneb Tecnologia
+        </Link>
+        {/* Botón mobile */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="lg:hidden p-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none h-10 w-10"
+        >
+          <svg
+            className="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            {isOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
+        {/* Links */}
+        <div className="hidden lg:flex lg:items-center lg:space-x-6">
+          <ul className="flex items-center space-x-6">
+            {/* Dropdown Motores */}
+            <li className="relative">
+              <button
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+                className="flex items-center px-3 py-2 hover:text-accent transition"
+              >
+                Motores
+                <svg className="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fillRule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.584l3.71-4.354a.75.75 0 011.14.976l-4.25 5a.75.75 0 01-1.14 0l-4.25-5a.75.75 0 01.02-1.06z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+              {dropdownOpen && (
+                <ul
+                  className={`
+                    mt-2 rounded-md shadow-lg py-2 z-20
+                    bg-white text-gray-800
+                    lg:absolute lg:w-56
+                  `}
+                >
+                  <li>
+                    <Link href="" className="block px-4 py-2 hover:bg-gray-100">
+                      Motores para Puertas Correderas
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="" className="block px-4 py-2 hover:bg-gray-100">
+                      Motores para Puertas Basculantes
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="" className="block px-4 py-2 hover:bg-gray-100">
+                      Motores para Puertas Batientes
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="" className="block px-4 py-2 hover:bg-gray-100">
+                      Motores para Puertas Enrollables
+                    </Link>
+                  </li>
                 </ul>
-            </div>
+              )}
+            </li>
+            {/* Beneficios */}
+            <li>
+              <a href="#beneficios" className="px-3 py-2 hover:text-accent transition">
+                Beneficios
+              </a>
+            </li>
+            {/* Contacto */}
+            <li>
+              <a
+                href="#contacto"
+                className="px-4 py-2 rounded bg-[#ffc107] text-black font-medium hover:bg-accent/80 transition"
+              >
+                Contáctanos
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
+      {/* Menú móvil */}
+      <div
+        className={`${isOpen ? "block" : "hidden"} 
+          absolute top-16 left-0 w-full lg:hidden bg-navbar-dark`}
+      >
+        {/* Agregamos el padding */}
+        <ul className="flex flex-col px-4 py-3 space-y-2">
+          {/* Dropdown Motores */}
+          <li className="relative">
+            <button
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+              className="flex items-center justify-between w-full px-3 py-2 hover:text-accent transition"
+            >
+              Motores
+              <svg className="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fillRule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.584l3.71-4.354a.75.75 0 011.14.976l-4.25 5a.75.75 0 01-1.14 0l-4.25-5a.75.75 0 01.02-1.06z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+            {dropdownOpen && (
+              <ul
+                className={`
+                  my-2 rounded-md shadow-lg py-2 z-20 w-full
+                  bg-white text-gray-800
+                `}
+              >
+                <li>
+                  <Link href="/motores/correderas" className="block px-4 py-2 hover:bg-gray-100">
+                    Motores para Puertas Correderas
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/motores/basculantes" className="block px-4 py-2 hover:bg-gray-100">
+                    Motores para Puertas Basculantes
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/motores/batientes" className="block px-4 py-2 hover:bg-gray-100">
+                    Motores para Puertas Batientes
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/motores/enrollables" className="block px-4 py-2 hover:bg-gray-100">
+                    Motores para Puertas Enrollables
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </li>
+          {/* Beneficios */}
+          <li>
+            <a href="#beneficios" className="block px-3 py-2 hover:text-accent transition">
+              Beneficios
+            </a>
+          </li>
+          {/* Contacto */}
+          <li>
+            <a
+              href="#contacto"
+              className="px-4 py-2 rounded bg-[#ffc107] text-black font-medium hover:bg-accent/80 transition"
+            >
+              Contáctanos
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   )
 }
