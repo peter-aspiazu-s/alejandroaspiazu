@@ -1,26 +1,18 @@
 import { faTruck } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from 'next/image';
 
-export const Hero = ({ titulo, subtitulo, imagen }) => {
+export const Hero = ({titulo, subtitulo, imagen}) => {
   return (
-    <section className="relative text-center text-white py-24 min-h-[80vh] flex items-center justify-center">
-      {/* Capa de la imagen de fondo */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={imagen}
-          alt="Banner de Automatización de Portones"
-          fill
-          className="object-cover"
-          sizes="100vw"
-          priority
-        />
-        {/* Capa de color (Overlay) */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-r from-blue-800 to-blue-600 opacity-70"></div>
-      </div>
-      
-      {/* Capa del contenido */}
-      <div className="container mx-auto px-4 z-20">
+    <section 
+      className="bg-gradient-to-r from-blue-800 to-blue-600 text-center text-white py-24 hero"
+      style={{ 
+        backgroundImage: `linear-gradient(rgba(0, 63, 125, 0.7), rgba(0, 86, 179, 0.7)), url(${imagen})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPositionX: "center",
+        backgroundPositionY: "center"
+      }}  
+    >
+      <div className="container mx-auto px-4">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           {titulo}
         </h1>
@@ -40,5 +32,5 @@ export const Hero = ({ titulo, subtitulo, imagen }) => {
         </p>
       </div>
     </section>
-  );
-};
+  )
+}

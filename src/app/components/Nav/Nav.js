@@ -7,7 +7,7 @@ export const Nav = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false)
 
   return (
-    <nav className="bg-navbar-dark text-white relative">
+    <nav className="bg-navbar-dark text-white relative z-50">
       <div className="container mx-auto px-2 md:px-4 flex flex-nowrap items-center justify-between h-16">
         {/* Logo con flex-shrink-0 */}
         <Link href="/" className="text-lg font-bold flex-shrink-0">
