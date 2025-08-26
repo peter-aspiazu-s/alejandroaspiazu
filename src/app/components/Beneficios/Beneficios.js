@@ -38,6 +38,7 @@ export const Beneficios = () => {
                     layout="fill"
                     className="rounded-lg"
                     priority={idx === 0} // optimiza la primera
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
               </SwiperSlide>

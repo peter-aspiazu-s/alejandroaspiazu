@@ -45,7 +45,7 @@ export default function MotoresBatientes() {
       <VariedadMotores motores={motores} tituloMotores={"Las mejores reseñas de motores para puertas enrrollables"} descripcionMotores={"Hemos preparado una ficha técnica detallada para cada motor, donde podrás conocer todas sus especificaciones y características, facilitando tu decisión de compra."} />
       <CallToAction />
       <Beneficios />
-      <InstalacionMotor tituloInstalacion={"¿Como Instalar los Motores de Enrollables?"} descripcionInstalacion={"En este video puedes ver cómo se instalan estos equipos, recuerda que la instalación es similar, pero la configuración dependerá de la marca que tengas."} urlInstalacion={"http://youtube.com/watch?v=H6RquQl6WY8"} titleVideoInstalacion={"Instalación de motor para puerta enrollable"} />
+      <InstalacionMotor tituloInstalacion={"¿Como Instalar los Motores de Enrollables?"} descripcionInstalacion={"En este video puedes ver cómo se instalan estos equipos, recuerda que la instalación es similar, pero la configuración dependerá de la marca que tengas."} urlInstalacion={"https://www.youtube.com/watch?v=H6RquQl6WY8"} titleVideoInstalacion={"Instalación de motor para puerta enrollable"} />
       <TrabajosRealizados />
       <Contactos />
       <Youtube />
