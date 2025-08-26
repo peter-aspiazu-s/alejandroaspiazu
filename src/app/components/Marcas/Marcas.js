@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const Marcas = () => {
   return (
     // MARCAS
@@ -10,36 +12,54 @@ export const Marcas = () => {
 
         {/* Grid de logos */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-          <img
-            src="/images/Logo-Liftmaster.webp"
-            alt="LiftMaster"
-            className="max-h-24 mx-auto object-contain"
-          />
-          <img
-            src="/images/Logo-Ditec.webp"
-            alt="Ditec"
-            className="max-h-24 mx-auto object-contain"
-          />
-          <img
-            src="/images/Logo-Roger.webp"
-            alt="Roger"
-            className="max-h-24 mx-auto object-contain"
-          />
-          <img
-            src="/images/Logo-Elsamec.webp"
-            alt="Elsamec"
-            className="max-h-24 mx-auto object-contain"
-          />
-          <img
-            src="/images/Garen-Logo.webp"
-            alt="Garen"
-            className="max-h-24 mx-auto object-contain"
-          />
-          <img
-            src="/images/craftsman.webp"
-            alt="Craftsman"
-            className="max-h-24 mx-auto object-contain"
-          />
+          <div className="relative mx-auto h-16 w-32 lg:h-20 lg:w-36 bg-gray-100">
+            <Image
+              src="/images/Logo-Liftmaster.webp"
+              alt="LiftMaster"
+              layout="fill"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="relative mx-auto h-16 w-32 lg:h-20 lg:w-36 bg-gray-100">
+            <Image
+              src="/images/Logo-Ditec.webp"
+              alt="Ditec" 
+              layout="fill"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="relative mx-auto h-16 w-32 lg:h-20 lg:w-36 bg-gray-100">
+            <Image
+              src="/images/Logo-Roger.webp"
+              alt="Roger"
+              layout="fill"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="relative mx-auto h-16 w-32 lg:h-20 lg:w-36 bg-gray-100">
+            <Image
+              src="/images/Logo-Elsamec.webp"
+              alt="Elsamec"
+              layout="fill"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="relative mx-auto h-16 w-32 lg:h-20 lg:w-36 bg-gray-100">
+            <Image
+              src="/images/Garen-Logo.webp"
+              alt="Garen"
+              layout="fill"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="relative mx-auto h-16 w-32 lg:h-20 lg:w-36 bg-gray-100">
+            <Image
+              src="/images/craftsman.webp"
+              alt="Craftsman"
+              layout="fill"
+              className="rounded-lg"
+            />
+          </div>
         </div>
       </div>
     </section>

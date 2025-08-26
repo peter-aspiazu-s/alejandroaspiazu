@@ -11,7 +11,7 @@ import { Youtube } from "./components/Youtube/Youtube";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Hero titulo={"Automatiza Tu Vida"} subtitulo={"Especialistas en motores para portones: seguridad, comodidad y modernidad."} imagen={'/images/banner-home.webp'} />
       <Motores />
       <CallToAction />
       <Beneficios />

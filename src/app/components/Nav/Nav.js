@@ -59,22 +59,22 @@ export const Nav = () => {
                   `}
                 >
                   <li>
-                    <Link href="" className="block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/motores-para-puertas/motores-corredizos" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
                       Motores para Puertas Correderas
                     </Link>
                   </li>
                   <li>
-                    <Link href="" className="block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/motores-para-puertas/motores-basculantes" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
                       Motores para Puertas Basculantes
                     </Link>
                   </li>
                   <li>
-                    <Link href="" className="block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/motores-para-puertas/motores-batientes" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
                       Motores para Puertas Batientes
                     </Link>
                   </li>
                   <li>
-                    <Link href="" className="block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/motores-para-puertas/motores-enrollables" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
                       Motores para Puertas Enrollables
                     </Link>
                   </li>
@@ -129,22 +129,22 @@ export const Nav = () => {
                 `}
               >
                 <li>
-                  <Link href="/motores/correderas" className="block px-4 py-2 hover:bg-gray-100">
+                  <Link href="/motores-para-puertas/motores-corredizos" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
                     Motores para Puertas Correderas
                   </Link>
                 </li>
                 <li>
-                  <Link href="/motores/basculantes" className="block px-4 py-2 hover:bg-gray-100">
+                  <Link href="/motores-para-puertas/motores-basculantes" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
                     Motores para Puertas Basculantes
                   </Link>
                 </li>
                 <li>
-                  <Link href="/motores/batientes" className="block px-4 py-2 hover:bg-gray-100">
+                  <Link href="/motores-para-puertas/motores-batientes" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
                     Motores para Puertas Batientes
                   </Link>
                 </li>
                 <li>
-                  <Link href="/motores/enrollables" className="block px-4 py-2 hover:bg-gray-100">
+                  <Link href="/motores-para-puertas/motores-enrollables" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
                     Motores para Puertas Enrollables
                   </Link>
                 </li>

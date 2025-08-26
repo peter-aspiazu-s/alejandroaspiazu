@@ -9,13 +9,9 @@
 }
 
 .hero {
-  /* Imagen de fondo */
-  background: url('/images/su-mejor-alternativa-para-la-automatizacion-de-puertas-en-vigo.jpg') no-repeat center center;
+  /* Estilos para imagen de fondo */
   background-size: cover; /* Ajusta la imagen para cubrir todo el área */
   background-attachment: scroll; /* Opcional: fixed si quieres un efecto parallax */
-
-  /* Degradado superpuesto (opcional, para mejorar legibilidad del texto) */
-  background-image: linear-gradient(rgba(0, 63, 125, 0.7), rgba(0, 86, 179, 0.7)), url('/images/su-mejor-alternativa-para-la-automatizacion-de-puertas-en-vigo.jpg');
 
   color: white; /* Color del texto dentro de la sección hero */
   padding: 5rem 1rem; /* Espaciado interno */

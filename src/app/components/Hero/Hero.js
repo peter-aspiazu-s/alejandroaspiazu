@@ -1,15 +1,23 @@
 import { faTruck } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export const Hero = () => {
+export const Hero = ({titulo, subtitulo, imagen}) => {
   return (
-    <section className="bg-gradient-to-r from-blue-800 to-blue-600 text-center text-white py-24 hero">
+    <section 
+      className="bg-gradient-to-r from-blue-800 to-blue-600 text-center text-white py-24 hero"
+      style={{ 
+        backgroundImage: `linear-gradient(rgba(0, 63, 125, 0.7), rgba(0, 86, 179, 0.7)), url(${imagen})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPositionX: "center",
+        backgroundPositionY: "center"
+      }}  
+    >
       <div className="container mx-auto px-4">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-          Automatiza Tu Vida
+          {titulo}
         </h1>
         <p className="text-lg md:text-xl mb-6">
-          Especialistas en motores para portones: seguridad, comodidad y modernidad.
+          {subtitulo}
         </p>
         
         <a 

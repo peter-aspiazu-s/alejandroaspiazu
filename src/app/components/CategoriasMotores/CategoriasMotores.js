@@ -35,15 +35,15 @@ export const CategoriasMotores = () => {
           Categorías de Motores para Puertas
         </h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {/* Motor Puertas Correderas */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-            <div className="relative w-full h-48 bg-gray-100">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-72 md:w-80 h-[450px] md:h-[400px] m-auto">
+            <div className="relative w-64 h-48 md:w-72 md:h-52 bg-gray-100 m-auto">
               <Image
-                src="/images/motor-corredera.png"
+                src="/images/motor-corredera.webp"
                 alt="Motor Puertas Correderas"
-                fill
-                className="object-contain rounded-lg"
+                layout="fill"
+                className="rounded-lg"
               />
             </div>
             <div className="p-6 flex flex-col flex-1">
@@ -64,13 +64,13 @@ export const CategoriasMotores = () => {
           </div>
 
           {/* Motor Puertas Basculantes */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-            <div className="relative w-full h-48 bg-gray-100">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-72 md:w-80 h-[400px] md:h-[400px] m-auto">
+            <div className="relative m-auto w-64 h-48 md:w-72 md:h-52 bg-gray-100">
               <Image 
-                src="/images/motor-basculante.png" 
+                src="/images/motor-basculante.webp" 
                 alt="Motor Puertas Basculantes" 
-                fill
-                className="object-contain rounded-lg"
+                layout="fill"
+                className="rounded-lg"
               />
             </div>
             <div className="p-6 flex flex-col flex-1">
@@ -91,13 +91,13 @@ export const CategoriasMotores = () => {
           </div>
 
           {/* Motor Puertas Batientes */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-            <div className="relative w-full h-48 bg-gray-100">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-72 md:w-80 h-[400px] md:h-[400px] m-auto">
+            <div className="relative m-auto w-64 h-48 md:w-72 md:h-52 bg-gray-100">
               <Image 
                 src="/images/puertas-batientes.webp" 
                 alt="Motor Puertas Batientes" 
-                fill
-                className="object-contain rounded-lg"
+                layout="fill"
+                className="rounded-lg"
               />
             </div>
             <div className="p-6 flex flex-col flex-1">
@@ -118,13 +118,13 @@ export const CategoriasMotores = () => {
           </div>
 
           {/* Motor Puertas Enrollables */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-            <div className="relative w-full h-48 bg-gray-100">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-72 md:w-80 h-[400px] md:h-[400px] m-auto">
+            <div className="relative m-auto w-64 h-48 md:w-72 md:h-52 bg-gray-100">
               <Image 
                 src="/images/motor-enrollable.jpeg" 
                 alt="Motores Puertas Enrollables" 
-                fill
-                className="object-contain rounded-lg"
+                layout="fill"
+                className="rounded-lg"
               />
             </div>
             <div className="p-6 flex flex-col flex-1">

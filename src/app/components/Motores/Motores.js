@@ -10,9 +10,9 @@ import "swiper/css/pagination"
 
 const images = [
   { src: "/images/roger.webp", alt: "Motor Corredizo ROGER" },
-  { src: "/images/pivo-60.webp", alt: "Motor Pivotante Garen" },
-  { src: "/images/81550-1.jpg", alt: "Motor Batiente Liftmaster" },
-  { src: "/images/uniko1.jpg", alt: "Motor de Cadena Uniko 1" },
+  { src: "/images/pivo-60.webp", alt: "Motor Batiente Garen" },
+  { src: "/images/81550-1.webp", alt: "Motor Basculante Liftmaster" },
+  { src: "/images/uniko1.webp", alt: "Motor de Cadena Uniko 1" },
 ]
 
 export const Motores = () => {
@@ -63,12 +63,12 @@ export const Motores = () => {
           >
             {images.map((img, idx) => (
               <SwiperSlide key={idx}>
-                <div className="relative w-full h-80 md:h-96">
+                <div className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[380px] xl:h-[380px] m-auto">
                   <Image
                     src={img.src}
                     alt={img.alt}
-                    fill
-                    className="object-contain rounded-lg"
+                    layout="fill"
+                    className="rounded-lg"
                     priority={idx === 0} // optimiza la primera
                   />
                 </div>

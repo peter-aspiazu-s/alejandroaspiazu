@@ -9,10 +9,10 @@ import "swiper/css/navigation"
 import "swiper/css/pagination"
 
 const images = [
-  { src: "/images/su-mejor-alternativa-para-la-automatizacion-de-puertas-en-vigo.jpg", alt: "Beneficio 1" },
+  { src: "/images/banner-home.webp", alt: "Beneficio 1" },
   { src: "/images/liftmaster_hero.webp", alt: "Beneficio 2" },
-  { src: "/images/porton-corredizo-moderno.jpg", alt: "Beneficio 3" },
-  { src: "/images/pivotante.jpg", alt: "Beneficio 4" },
+  { src: "/images/porton-corredizo-moderno.webp", alt: "Beneficio 3" },
+  { src: "/images/pivotante.webp", alt: "Beneficio 4" },
 ]
 
 export const Beneficios = () => {
@@ -31,12 +31,12 @@ export const Beneficios = () => {
           >
             {images.map((img, idx) => (
               <SwiperSlide key={idx}>
-                <div className="relative w-full h-80 md:h-96">
+                <div className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[380px] xl:h-[380px] m-auto">
                   <Image
                     src={img.src}
                     alt={img.alt}
-                    fill
-                    className="object-contain rounded-lg"
+                    layout="fill"
+                    className="rounded-lg"
                     priority={idx === 0} // optimiza la primera
                   />
                 </div>
