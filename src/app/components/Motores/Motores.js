@@ -42,7 +42,7 @@ export const Motores = () => {
             </li>
           </ul>
 
-          <h5 className="mt-6 font-semibold">Marcas que ofrecemos:</h5>
+          <h3 className="mt-6 font-semibold">Marcas que ofrecemos:</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li><strong>Impervious:</strong> Opciones para uso residencial e industrial.</li>
             <li><strong>Garen:</strong> Amplia gama de soluciones para viviendas y empresas.</li>

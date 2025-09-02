@@ -8,7 +8,7 @@ export const Nav = () => {
 
   const handleMenu = () => {
     setIsOpen(!isOpen)
-    setDropdownOpen(!dropdownOpen)
+    setDropdownOpen(false)
   }
   
   const handleCloseMenu = () => {
@@ -31,6 +31,7 @@ export const Nav = () => {
         <button
           onClick={handleMenu}
           className="lg:hidden p-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none h-10 w-10"
+          aria-label={isOpen ? "Cerrar menú principal" : "Abrir menú principal"}
         >
           <svg
             className="h-6 w-6"
@@ -54,6 +55,9 @@ export const Nav = () => {
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
                 className="flex items-center px-3 py-2 hover:text-accent transition"
+                aria-expanded={dropdownOpen}
+                aria-haspopup="true"
+                aria-label="Menú de motores"
               >
                 Motores
                 <svg className="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -98,6 +102,7 @@ export const Nav = () => {
             {/* Beneficios */}
             <li>
               <a href="#beneficios" className="px-3 py-2 hover:text-accent transition"
+              onClick={handleCloseMenu}
               >
                 Beneficios
               </a>
@@ -107,6 +112,7 @@ export const Nav = () => {
               <a
                 href="#contacto"
                 className="px-4 py-2 rounded bg-[#ffc107] text-black font-medium hover:bg-accent/80 transition"
+                onClick={handleCloseMenu}
               >
                 Contáctanos
               </a>
@@ -169,7 +175,7 @@ export const Nav = () => {
           </li>
           {/* Beneficios */}
           <li>
-            <a href="#beneficios" className="block px-3 py-2 hover:text-accent transition" onClick={handleMenu}>
+            <a href="#beneficios" className="block px-3 py-2 hover:text-accent transition" onClick={handleCloseMenu}>
               Beneficios
             </a>
           </li>
@@ -177,7 +183,7 @@ export const Nav = () => {
           <li>
             <a
               href="#contacto"
-              className="px-4 py-2 rounded bg-[#ffc107] text-black font-medium hover:bg-accent/80 transition" onClick={handleMenu}
+              className="px-4 py-2 rounded bg-[#ffc107] text-black font-medium hover:bg-accent/80 transition" onClick={handleCloseMenu}
             >
               Contáctanos
             </a>

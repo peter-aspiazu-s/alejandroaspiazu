@@ -89,6 +89,7 @@ export const Contactos = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block text-green-500 hover:text-green-600 text-2xl"
+                aria-label="Abrir chat de WhatsApp"
               >
                 <FontAwesomeIcon icon={faWhatsapp} size="lg" />
               </a>
@@ -98,6 +99,7 @@ export const Contactos = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-700 text-2xl"
+                aria-label="Visitar página de Facebook"
               >
                 <FontAwesomeIcon icon={faFacebook} size="lg" />
               </a>
@@ -108,6 +110,7 @@ export const Contactos = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-gray-800 text-2xl"
+                aria-label="Visitar página de TikTok"
               >
                 <FontAwesomeIcon icon={faTiktok} size="lg" />
               </a>
