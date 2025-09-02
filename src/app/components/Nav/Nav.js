@@ -10,6 +10,11 @@ export const Nav = () => {
     setIsOpen(!isOpen)
     setDropdownOpen(!dropdownOpen)
   }
+  
+  const handleCloseMenu = () => {
+    setIsOpen(false)
+    setDropdownOpen(false)
+  }
 
   return (
     <nav className="bg-navbar-dark text-white relative z-50">
@@ -18,7 +23,7 @@ export const Nav = () => {
         <Link 
           href="/" 
           className="text-lg font-bold flex-shrink-0"
-          onClick={handleMenu}
+          onClick={handleCloseMenu}
         >
           Deneb Tecnologia
         </Link>
