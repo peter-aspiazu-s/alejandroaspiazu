@@ -55,13 +55,13 @@ const YoutubeVideoFacade = ({ id, alt }) => {
 export const TrabajosRealizados = () => {
   const youtubeVideos = [
     { id: "PBKHMGmJw3w", alt: "Video de Trabajo 1" },
-    { id: "8ZZj9q-sygE", alt: "Video de Trabajo 2" },
+    { id: "9S2x4xQc2Ks", alt: "Video de Trabajo 2" },
     { id: "RdVgQJUOTMk", alt: "Video de Trabajo 3" },
-    { id: "k1jFldlCrPE", alt: "Video de Trabajo 4" },
+    { id: "3HEBYHPLeA0", alt: "Video de Trabajo 4" },
     { id: "0iWOa8E2-FM", alt: "Video de Trabajo 5" },
-    { id: "si0b1bofGvU", alt: "Video de Trabajo 6" },
-    { id: "noYIpno35M0", alt: "Video de Trabajo 7" },
-    { id: "NfKu9EjgQd0", alt: "Video de Trabajo 8" },
+    { id: "LZ0b8bguUqo", alt: "Video de Trabajo 6" },
+    { id: "txWiLBabu3U", alt: "Video de Trabajo 7" },
+    { id: "zcAhITh_2Ds", alt: "Video de Trabajo 8" },
   ];
 
   return (

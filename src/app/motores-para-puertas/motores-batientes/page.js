@@ -28,36 +28,43 @@ const motores = [
       titulo: "Pivo – Garen 0.75",
       imagen: "/images/pivo-60.webp",
       alt: "Pivo – Garen 0.75",
+      enlace: "/motores-para-puertas/motores-batientes/motor-garen-pivo-75"
     },
     {
       titulo: "Roger Serie BE20 - 200",
       imagen: "/images/roger-batiente.webp",
       alt: "Roger Serie BE20 - 200",
+      enlace: "/motores-para-puertas/motores-batientes/motor-roger-serie-be20-200"
     },  
     {
       titulo: "Motores Dítec PWR",
       imagen: "/images/ditec-batiente.webp",
       alt: "Motores Dítec PWR",
+      enlace: "/motores-para-puertas/motores-batientes/motor-ditec-pwr"
     },
     {
       titulo: "Roger Serie BE20 - 400",
       imagen: "/images/roger-batiente.webp",
       alt: "Roger Serie BE20 - 200",
+      enlace: "/motores-para-puertas/motores-batientes/motor-roger-serie-be20-400"
     },
     {
       titulo: "Pivo – Garen 1.10",
       imagen: "/images/pivo-60.webp",
       alt: "Pivo – Garen 1.10",
+      enlace: "/motores-para-puertas/motores-batientes/motor-garen-pivo-110"
     },
     {
       titulo: "Roger SMARTY",
       imagen: "/images/roger-smarty.webp",
       alt: "Roger SMARTY",
+      enlace: "/motores-para-puertas/motores-batientes/motor-roger-smarty"
     },
     {
       titulo: "Roger Serie BE20 - 500",
       imagen: "/images/roger-batiente.webp",
       alt: "Roger Serie BE20 - 200",
+      enlace: "/motores-para-puertas/motores-batientes/motor-roger-serie-be20-500"
     }
   ]
 
