@@ -6,16 +6,25 @@ export const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false)
 
+  const handleMenu = () => {
+    setIsOpen(!isOpen)
+    setDropdownOpen(!dropdownOpen)
+  }
+
   return (
     <nav className="bg-navbar-dark text-white relative z-50">
       <div className="container mx-auto px-2 md:px-4 flex flex-nowrap items-center justify-between h-16">
         {/* Logo con flex-shrink-0 */}
-        <Link href="/" className="text-lg font-bold flex-shrink-0">
+        <Link 
+          href="/" 
+          className="text-lg font-bold flex-shrink-0"
+          onClick={handleMenu}
+        >
           Deneb Tecnologia
         </Link>
         {/* Botón mobile */}
         <button
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={handleMenu}
           className="lg:hidden p-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none h-10 w-10"
         >
           <svg
@@ -59,22 +68,22 @@ export const Nav = () => {
                   `}
                 >
                   <li>
-                    <Link href="/motores-para-puertas/motores-corredizos" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
+                    <Link href="/motores-para-puertas/motores-corredizos" className="block px-4 py-2 hover:bg-gray-100">
                       Motores para Puertas Correderas
                     </Link>
                   </li>
                   <li>
-                    <Link href="/motores-para-puertas/motores-basculantes" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
+                    <Link href="/motores-para-puertas/motores-basculantes" className="block px-4 py-2 hover:bg-gray-100">
                       Motores para Puertas Basculantes
                     </Link>
                   </li>
                   <li>
-                    <Link href="/motores-para-puertas/motores-batientes" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
+                    <Link href="/motores-para-puertas/motores-batientes" className="block px-4 py-2 hover:bg-gray-100">
                       Motores para Puertas Batientes
                     </Link>
                   </li>
                   <li>
-                    <Link href="/motores-para-puertas/motores-enrollables" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
+                    <Link href="/motores-para-puertas/motores-enrollables" className="block px-4 py-2 hover:bg-gray-100">
                       Motores para Puertas Enrollables
                     </Link>
                   </li>
@@ -83,7 +92,8 @@ export const Nav = () => {
             </li>
             {/* Beneficios */}
             <li>
-              <a href="#beneficios" className="px-3 py-2 hover:text-accent transition">
+              <a href="#beneficios" className="px-3 py-2 hover:text-accent transition"
+              >
                 Beneficios
               </a>
             </li>
@@ -129,22 +139,23 @@ export const Nav = () => {
                 `}
               >
                 <li>
-                  <Link href="/motores-para-puertas/motores-corredizos" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
+                  <Link href="/motores-para-puertas/motores-corredizos" className="block px-4 py-2 hover:bg-gray-100" onClick={handleMenu}
+                  >
                     Motores para Puertas Correderas
                   </Link>
                 </li>
                 <li>
-                  <Link href="/motores-para-puertas/motores-basculantes" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
+                  <Link href="/motores-para-puertas/motores-basculantes" className="block px-4 py-2 hover:bg-gray-100" onClick={handleMenu}>
                     Motores para Puertas Basculantes
                   </Link>
                 </li>
                 <li>
-                  <Link href="/motores-para-puertas/motores-batientes" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
+                  <Link href="/motores-para-puertas/motores-batientes" className="block px-4 py-2 hover:bg-gray-100" onClick={handleMenu}>
                     Motores para Puertas Batientes
                   </Link>
                 </li>
                 <li>
-                  <Link href="/motores-para-puertas/motores-enrollables" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setDropdownOpen(!dropdownOpen)}>
+                  <Link href="/motores-para-puertas/motores-enrollables" className="block px-4 py-2 hover:bg-gray-100" onClick={handleMenu}>
                     Motores para Puertas Enrollables
                   </Link>
                 </li>
@@ -153,7 +164,7 @@ export const Nav = () => {
           </li>
           {/* Beneficios */}
           <li>
-            <a href="#beneficios" className="block px-3 py-2 hover:text-accent transition">
+            <a href="#beneficios" className="block px-3 py-2 hover:text-accent transition" onClick={handleMenu}>
               Beneficios
             </a>
           </li>
@@ -161,7 +172,7 @@ export const Nav = () => {
           <li>
             <a
               href="#contacto"
-              className="px-4 py-2 rounded bg-[#ffc107] text-black font-medium hover:bg-accent/80 transition"
+              className="px-4 py-2 rounded bg-[#ffc107] text-black font-medium hover:bg-accent/80 transition" onClick={handleMenu}
             >
               Contáctanos
             </a>
