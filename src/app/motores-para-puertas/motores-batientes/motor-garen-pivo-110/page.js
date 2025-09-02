@@ -9,6 +9,11 @@ import { TrabajosRealizados } from "@/app/components/TrabajosRealizados/Trabajos
 import { Youtube } from "@/app/components/Youtube/Youtube";
 
 
+export const metadata = {
+    title: "Motor Garen PIVO 110 para Portones Batientes | Deneb Tecnología",
+    description: "Descubre el motor de brazos Garen PIVO 110, ideal para puertas de garaje batientes de hasta 3 metros. Con 1/2 HP de fuerza y diseñado para uso superintensivo, ofrece fiabilidad y comodidad.",
+};
+
 export default function MotorGarenPivo110() {
     return (
         <>

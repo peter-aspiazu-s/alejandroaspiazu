@@ -10,6 +10,11 @@ import { VariedadMotores } from "@/app/components/VariedadMotores/VariedadMotore
 import { Youtube } from "@/app/components/Youtube/Youtube";
 
 
+export const metadata = {
+  title: "Motores para Puertas Batientes | Deneb Tecnología",
+  description: "Automatiza tu portón con motores de brazos para puertas batientes. Soluciones robustas y elegantes para uso residencial e industrial. Ofrecemos instalación, soporte y marcas como Garen, Roger y Ditec en Ecuador.",
+};
+
 const imagesResidencialBatientes = [
   { src: "/images/pivo-60.webp", alt: "Motor Batiente Garen" },
   { src: "/images/roger-batiente.webp", alt: "Motor Batiente Roger" },

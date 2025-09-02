@@ -9,6 +9,11 @@ import { TrabajosRealizados } from "@/app/components/TrabajosRealizados/Trabajos
 import { Youtube } from "@/app/components/Youtube/Youtube";
 
 
+export const metadata = {
+  title: "Motor Garen Niid 400kg para Portones Corredizos | Deneb Tecnología",
+  description: "Descubre el motor Garen Niid 400kg, ideal para portones corredizos residenciales. Rápido y fiable, con 7 ciclos/hora y apertura de 3m en 6s. Conoce sus características y beneficios.",
+};
+
 export default function MotorGarenNiid400kg() {
     return (
         <>

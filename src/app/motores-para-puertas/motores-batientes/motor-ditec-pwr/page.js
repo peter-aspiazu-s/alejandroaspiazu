@@ -9,6 +9,11 @@ import { TrabajosRealizados } from "@/app/components/TrabajosRealizados/Trabajos
 import { Youtube } from "@/app/components/Youtube/Youtube";
 
 
+export const metadata = {
+    title: "Motor Ditec PWR para Portones Batientes | Deneb Tecnología",
+    description: "Descubre la gama de motores Ditec PWR para portones batientes. Con modelos para diferentes tamaños y pesos, estos motores electromecánicos ofrecen soluciones de automatización confiables y eficientes. Conoce las características técnicas de cada modelo.",
+};
+
 export default function MotorDitecPwr() {
     return (
         <>

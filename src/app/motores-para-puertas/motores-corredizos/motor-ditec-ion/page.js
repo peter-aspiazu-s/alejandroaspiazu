@@ -9,6 +9,11 @@ import { TrabajosRealizados } from "@/app/components/TrabajosRealizados/Trabajos
 import { Youtube } from "@/app/components/Youtube/Youtube";
 
 
+export const metadata = {
+  title: "Motor Corredizo Ditec ION | 400kg y 600kg | Deneb Tecnología",
+  description: "Descubre el motor corredizo Ditec ION para puertas de hasta 600kg. Un equipo robusto y fiable, ideal para uso residencial y comunidades. Detalles técnicos, instalación y soporte en Ecuador.",
+};
+
 export default function MotorDitecIon600kg() {
     return (
         <>

@@ -10,6 +10,12 @@ import { VariedadMotores } from "@/app/components/VariedadMotores/VariedadMotore
 import { Youtube } from "@/app/components/Youtube/Youtube";
 
 
+export const metadata = {
+  title: "Motores para Puertas Enrollables | Deneb Tecnología",
+  description: "Automatiza tu negocio con motores para puertas enrollables. Ofrecemos soluciones de seguridad y comodidad, ideales para tiendas y locales comerciales. Envío e instalación en Ecuador.",
+};
+
+
 const imagesResidencialBatientes = [
   { src: "/images/puertaenrollable1.webp", alt: "Puerta enrollable" },
 ]
@@ -28,7 +34,7 @@ const motores = [
     },
   ]
 
-export default function MotoresBatientes() {
+export default function MotoresEnrollables() {
   return (
     <>
       <Hero titulo={"Motores para Puertas Enrollables"} subtitulo={"No pierdas más tiempo ni esfuerzo. Si bien una puerta pesada no es un problema para todos, para personas mayores o con movilidad reducida, la automatización es una gran solución. Nuestros motores son exclusivos para puertas enrollables de negocios y tiendas, brindando comodidad y accesibilidad a tu local."} imagen={"/images/banner-home.webp"} />

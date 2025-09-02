@@ -15,8 +15,8 @@ import { Footer } from "./components/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Puertas Automaticas",
-  description: "Automatiza tu portón con motores eléctricos residenciales e industriales. Instalamos y distribuimos marcas como Garen, Roger, Came y más. Soluciones seguras, rápidas y confiables con envíos a nivel nacional en todo el Ecuador.",
+  title: "Deneb Tecnología | Motores para Portones Automáticos",
+    description: "Automatiza tu portón con nuestros motores para puertas batientes, corredizas, abatibles y enrollables. Ofrecemos soluciones de calidad y seguridad para tu hogar y negocio.",
 };
 
 export default function RootLayout({ children }) {

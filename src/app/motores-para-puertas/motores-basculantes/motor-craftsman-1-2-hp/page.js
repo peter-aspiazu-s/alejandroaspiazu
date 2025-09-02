@@ -9,6 +9,11 @@ import { TrabajosRealizados } from "@/app/components/TrabajosRealizados/Trabajos
 import { Youtube } from "@/app/components/Youtube/Youtube";
 
 
+export const metadata = {
+    title: "Motor Craftsman 1/2 HP para Portones Basculantes | Deneb Tecnología",
+    description: "Descubre el motor Craftsman de 1/2 HP para puertas de garaje residenciales. Con transmisión de cadena y cable, es fácil de instalar y programar, ideal para un uso sencillo y efectivo en tu hogar.",
+};
+
 export default function MotorCraftsman1y2hp() {
     return (
         <>

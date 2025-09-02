@@ -10,6 +10,11 @@ import { VariedadMotores } from "@/app/components/VariedadMotores/VariedadMotore
 import { Youtube } from "@/app/components/Youtube/Youtube";
 
 
+export const metadata = {
+  title: "Motores para Puertas Levadizas y Basculantes | Deneb Tecnología",
+  description: "Automatiza tu garaje con nuestros motores para puertas levadizas. Ofrecemos las mejores marcas como Liftmaster y Craftsman. Garantiza comodidad y seguridad en tu hogar con instalación y soporte en todo Ecuador.",
+};
+
 const imagesResidencialBasculantes = [
     { src: "/images/81550-1.webp", alt: "Motor Basculante Liftmaster de 1/2 hp" },
     { src: "/images/liftmaster2.webp", alt: "Motor Basculante Liftmaster" },

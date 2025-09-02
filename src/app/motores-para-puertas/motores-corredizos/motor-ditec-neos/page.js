@@ -9,7 +9,12 @@ import { TrabajosRealizados } from "@/app/components/TrabajosRealizados/Trabajos
 import { Youtube } from "@/app/components/Youtube/Youtube";
 
 
-export default function MotorDitecIon600kg() {
+export const metadata = {
+  title: "Motor Ditec Neos para Puertas Corredizas | Deneb Tecnología",
+  description: "Encuentra el motor Ditec Neos para portones corredizos de 300kg, 400kg, 600kg y 1000kg. Un equipo robusto y fiable, ideal para uso intensivo. Ofrecemos instalación y soporte en Ecuador.",
+};
+
+export default function MotorDitecNeos600kg() {
     return (
         <>
             <MotorDetalle

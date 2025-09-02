@@ -10,6 +10,11 @@ import { VariedadMotores } from "@/app/components/VariedadMotores/VariedadMotore
 import { Youtube } from "@/app/components/Youtube/Youtube";
 
 
+export const metadata = {
+  title: "Motores para Puertas Correderas | Deneb Tecnología",
+  description: "Descubre nuestra selección de motores eléctricos para puertas corredizas. Eficiencia, seguridad y la mejor calidad para tu hogar o industria.",
+};
+
 const imagesResidencialCorredizos = [
   { src: "/images/kdz500kg.webp", alt: "Motor Corredizo KDZ 500KG GAREN" },
   { src: "/images/roger600kgresidencial.webp", alt: "Motor Corredizo Roger 600kg" },

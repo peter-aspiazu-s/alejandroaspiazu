@@ -9,6 +9,11 @@ import { TrabajosRealizados } from "@/app/components/TrabajosRealizados/Trabajos
 import { Youtube } from "@/app/components/Youtube/Youtube";
 
 
+export const metadata = {
+  title: "Motor Garen KDZ 500kg para Portones Corredizos | Deneb Tecnología",
+  description: "Descubre el motor Garen KDZ 500kg para portones corredizos. Ideal para uso semi-industrial, con 30 ciclos/hora y alta velocidad de apertura. Ofrecemos instalación, soporte y durabilidad garantizada en Ecuador.",
+};
+
 export default function MotorGarenKdz500kg() {
     return (
         <>

@@ -9,6 +9,11 @@ import { TrabajosRealizados } from "@/app/components/TrabajosRealizados/Trabajos
 import { Youtube } from "@/app/components/Youtube/Youtube";
 
 
+export const metadata = {
+    title: "Motores Roger SMARTY para Portones Batientes | Deneb Tecnología",
+    description: "Descubre la línea de motores Roger SMARTY, una solución duradera y eficaz para automatizar portones batientes. Conoce las 5 versiones diseñadas para diferentes tamaños de puertas y su uso superintensivo.",
+};
+
 export default function MotorRogerSmarty() {
     return (
         <>

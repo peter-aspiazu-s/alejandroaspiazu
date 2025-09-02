@@ -8,6 +8,12 @@ import { Motores } from "./components/Motores/Motores";
 import { TrabajosRealizados } from "./components/TrabajosRealizados/TrabajosRealizados";
 import { Youtube } from "./components/Youtube/Youtube";
 
+
+export const metadata = {
+    title: "Deneb Tecnología | Motores para Portones Automáticos",
+    description: "Automatiza tu portón con nuestros motores para puertas batientes, corredizas, abatibles y enrollables. Ofrecemos soluciones de calidad y seguridad para tu hogar y negocio.",
+};
+
 export default function Home() {
   return (
     <>

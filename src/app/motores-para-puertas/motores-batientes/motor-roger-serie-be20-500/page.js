@@ -9,6 +9,11 @@ import { TrabajosRealizados } from "@/app/components/TrabajosRealizados/Trabajos
 import { Youtube } from "@/app/components/Youtube/Youtube";
 
 
+export const metadata = {
+    title: "Motor Roger Serie BE20-500 para Portones Batientes | Deneb Tecnología",
+    description: "Conoce el motor Roger Serie BE20-500 para portones batientes de hasta 3.5 metros. Diseñado para uso superintensivo con 1,000 ciclos diarios, este equipo inteligente de la marca Roger Brushless ofrece alta fiabilidad y rendimiento.",
+};
+
 export default function MotorRogerSerieBe20500() {
     return (
         <>
