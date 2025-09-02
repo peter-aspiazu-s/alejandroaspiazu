@@ -1,7 +1,7 @@
 "use client";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faFacebook, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import { useState } from "react";
@@ -83,6 +83,7 @@ export const Contactos = () => {
             </p>
             <p className="mb-2">📍 <strong>Dirección:</strong> Guayaquil, Ecuador</p>
             <div className="mt-4">
+              {/* WhatsApp */}
               <a
                 href="https://wa.link/4ajisn"
                 target="_blank"
@@ -90,6 +91,25 @@ export const Contactos = () => {
                 className="inline-block text-green-500 hover:text-green-600 text-2xl"
               >
                 <FontAwesomeIcon icon={faWhatsapp} size="lg" />
+              </a>
+              {/* Facebook */}
+              <a
+                href="https://www.facebook.com/profile.php?id=61579852883215"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-700 text-2xl"
+              >
+                <FontAwesomeIcon icon={faFacebook} size="lg" />
+              </a>
+
+              {/* TikTok */}
+              <a
+                href="https://www.tiktok.com/@electrnica.y.auto"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black hover:text-gray-800 text-2xl"
+              >
+                <FontAwesomeIcon icon={faTiktok} size="lg" />
               </a>
             </div>
           </div>

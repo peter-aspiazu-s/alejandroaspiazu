@@ -26,11 +26,13 @@ const motores = [
         titulo: "Motor Liftmaster 1/2 hp",
         imagen: "/images/81550-1.webp",
         alt: "Motor Basculante Liftmaster de 1/2 hp",
+        enlace: "/motores-para-puertas/motores-basculantes/motor-liftmaster-1-2-hp"
     },
     {
         titulo: "Motor Craftsman",
         imagen: "/images/craftsman1.webp",
         alt: "Motor Basculante Craftsman",
+        enlace: "/motores-para-puertas/motores-basculantes/motor-craftsman-1-2-hp"
     }
 ]
 

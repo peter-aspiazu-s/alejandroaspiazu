@@ -34,7 +34,7 @@ export const VariedadMotores = ({motores, tituloMotores, descripcionMotores}) =>
                   {motor.titulo}
                 </h5>
                 <a
-                  href="https://wa.me/593960067820?text=Estoy%20interesado%20en%20este%20motor"
+                  href={motor.enlace}
                   target="_blank"
                   className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition text-center mt-auto"
                 >

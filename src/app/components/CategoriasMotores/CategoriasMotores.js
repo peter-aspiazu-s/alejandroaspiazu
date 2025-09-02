@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link";
 
 const categories = [
   {
@@ -6,28 +7,28 @@ const categories = [
     alt: "Motor Puertas Correderas",
     title: "Motores Puertas Correderas",
     description: "Ideales para portones que se deslizan lateralmente, robustos y confiables.",
-    href: "https://wa.me/593960067820?text=Estoy%20interesado%20en%20Motores%20para%20Puertas%20Correderas",
+    href: "/motores-para-puertas/motores-corredizos",
   },
   {
     src: "/images/motor-basculante.webp",
     alt: "Motor Puertas Basculantes",
     title: "Motores Puertas Basculantes",
     description: "Perfectos para garajes residenciales, brindan confort y seguridad al máximo nivel.",
-    href: "https://wa.me/593960067820?text=Estoy%20interesado%20en%20Motores%20para%20Puertas%20Basculantes",
+    href: "/motores-para-puertas/motores-basculantes",
   },
   {
     src: "/images/puertas-batientes.webp",
     alt: "Motor Puertas Batientes",
     title: "Motores Puertas Batientes",
     description: "Solución para portones que abren hacia adentro o hacia afuera, elegantes y modernos.",
-    href: "https://wa.me/593960067820?text=Estoy%20interesado%20en%20Motores%20para%20Puertas%20Batientes",
+    href: "/motores-para-puertas/motores-batientes",
   },
   {
     src: "/images/motor-enrollable.jpeg",
     alt: "Motores Puertas Enrollables",
     title: "Motores Puertas Enrollables",
     description: "Ideales para locales comerciales e industrias, resistentes y seguros.",
-    href: "https://wa.me/593960067820?text=Estoy%20interesado%20en%20Motores%20para%20Puertas%20Enrollables",
+    href: "/motores-para-puertas/motores-enrollables",
   },
 ];
 
@@ -86,13 +87,13 @@ export const CategoriasMotores = () => {
                 <p className="text-gray-600 mb-4 flex-1">
                   {category.description}
                 </p>
-                <a
+                <Link
                   href={category.href}
                   target="_blank"
                   className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition text-center"
                 >
                   Consultar
-                </a>
+                </Link>
               </div>
             </div>
           ))}

@@ -27,51 +27,61 @@ const motores = [
       titulo: "Motor Roger H30 600kg",
       imagen: "/images/roger.webp",
       alt: "Motor Roger H30 600kg",
+      enlace: "/motores-para-puertas/motores-corredizos/motor-roger-h30-600kg"
     },
     {
       titulo: "Motor Roger BM30 400kg",
       imagen: "/images/bm30.webp",
       alt: "Motor Roger BM30 400kg",
+      enlace: "/motores-para-puertas/motores-corredizos/motor-roger-bm30-400kg"
     },  
     {
       titulo: "Motor Roger BH30 600kg",
       imagen: "/images/roger.webp",
       alt: "Motor Roger BH30 600kg",
+      enlace: "/motores-para-puertas/motores-corredizos/motor-roger-bh30-600kg"
     },
     {
       titulo: "Motor Niid Garen 400kg",
       imagen: "/images/niidgaren.webp",
       alt: "Motor Niid Garen 400kg",
+      enlace: "/motores-para-puertas/motores-corredizos/motor-garen-niid-400kg"
     },
     {
       titulo: "Motor KDZ Garen 500kg",
       imagen: "/images/kdzgaren.webp",
       alt: "Motor KDZ Garen 500kg",
+      enlace: "/motores-para-puertas/motores-corredizos/motor-garen-kdz-500kg"
     },
     {
       titulo: "Motor Dítec ION (400kg – 600kg)",
       imagen: "/images/ditec.webp",
       alt: "Motor Dítec ION",
+      enlace: "/motores-para-puertas/motores-corredizos/motor-ditec-ion"
     },
     {
       titulo: "Motor Dítec Neos (300kg – 1000kg)",
       imagen: "/images/ditecneos.webp",
       alt: "Motor Dítec Neos",
+      enlace: "/motores-para-puertas/motores-corredizos/motor-ditec-neos"
     },
     {
       titulo: "Motor Gran KDZ Garen 1000kg",
       imagen: "/images/grandkdz.webp",
       alt: "Motor Gran KDZ Garen 1000kg",
+      enlace: "/motores-para-puertas/motores-corredizos/motor-garen-grand-kdz-1000kg"
     },
     {
       titulo: "Motor Gran KDZtsi Garen 1200kg",
       imagen: "/images/grandkdz.webp",
       alt: "Motor Gran KDZtsi Garen 1200kg",
+      enlace: "/motores-para-puertas/motores-corredizos/motor-garen-grand-kdztsi-1200kg"
     },
     {
       titulo: "Motor Roger BG30 (1600kg – 2200kg)",
       imagen: "/images/roger.webp",
       alt: "Motor Roger BG30",
+      enlace: "/motores-para-puertas/motores-corredizos/motor-roger-bg30-2200kg"
     },
   ]
 

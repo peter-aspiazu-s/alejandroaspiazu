@@ -24,6 +24,7 @@ const motores = [
       titulo: "Motores Elsamec",
       imagen: "/images/uniko-1m.webp",
       alt: "Motores Elsamec",
+      enlace: "/motores-para-puertas/motores-enrollables/motor-elsamec-uniko"
     },
   ]
 
