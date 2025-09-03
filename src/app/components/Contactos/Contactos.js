@@ -106,7 +106,7 @@ export const Contactos = () => {
 
               {/* TikTok */}
               <a
-                href="https://www.tiktok.com/@electrnica.y.auto"
+                href="https://www.tiktok.com/@denebtecnologia?_t=ZM-8zQZUeM5cHO&_r=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-gray-800 text-2xl"
