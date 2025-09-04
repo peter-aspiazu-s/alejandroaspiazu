@@ -65,7 +65,7 @@ export const TrabajosRealizados = () => {
   ];
 
   return (
-    <section id="galeria" className="bg-white py-16">
+    <section id="trabajos-realizados" className="bg-white py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">

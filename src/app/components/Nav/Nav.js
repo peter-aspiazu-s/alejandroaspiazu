@@ -107,6 +107,12 @@ export const Nav = () => {
                 Beneficios
               </a>
             </li>
+            {/* Trabajos Realizados */}
+            <li>
+              <a href="#trabajos-realizados" className="block px-3 py-2 hover:text-accent transition" onClick={handleCloseMenu}>
+                Trabajos Realizados
+              </a>
+            </li>
             {/* Contacto */}
             <li>
               <a
@@ -177,6 +183,12 @@ export const Nav = () => {
           <li>
             <a href="#beneficios" className="block px-3 py-2 hover:text-accent transition" onClick={handleCloseMenu}>
               Beneficios
+            </a>
+          </li>
+          {/* Trabajos Realizados */}
+          <li>
+            <a href="#trabajos-realizados" className="block px-3 py-2 hover:text-accent transition" onClick={handleCloseMenu}>
+              Trabajos Realizados
             </a>
           </li>
           {/* Contacto */}
