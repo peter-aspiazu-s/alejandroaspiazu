@@ -12,6 +12,11 @@ import { Youtube } from "@/app/components/Youtube/Youtube";
 export const metadata = {
   title: "Motor Roger Serie BM30 para Portones Corredizos de 400kg | Deneb Tecnología",
   description: "Descubre el motor Roger BM30 para portones corredizos de 400kg. Con tecnología italiana y uso superintensivo, este motor ofrece durabilidad, bajo consumo y funcionamiento silencioso.",
+  openGraph: {
+    title: "Motor Roger Serie BM30 para Portones Corredizos de 400kg | Deneb Tecnología",
+    description: "Descubre el motor Roger BM30 para portones corredizos de 400kg. Con tecnología italiana y uso superintensivo, este motor ofrece durabilidad, bajo consumo y funcionamiento silencioso.",
+    images: ["/images/bm30.webp"],
+  },
 };
 
 export default function MotorRogerbm30400kg() {

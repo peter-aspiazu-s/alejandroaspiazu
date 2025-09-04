@@ -11,6 +11,11 @@ import { Youtube } from "@/app/components/Youtube/Youtube";
 export const metadata = {
     title: "Motor Garen PIVO 0.75 para Portones Batientes | Deneb Tecnología",
     description: "Conoce el motor de brazos Garen PIVO 0.75, ideal para portones batientes de hasta 2 metros. Diseñado para uso frecuente (25 ciclos/hora) y con capacidad para hasta 200 controles remotos.",
+    openGraph: {
+    title: "Motor Garen PIVO 0.75 para Portones Batientes | Deneb Tecnología",
+    description: "Conoce el motor de brazos Garen PIVO 0.75, ideal para portones batientes de hasta 2 metros. Diseñado para uso frecuente (25 ciclos/hora) y con capacidad para hasta 200 controles remotos.",
+    images: ["/images/pivo-60.webp"],
+  },
 };
 
 export default function MotorGarenPivo75() {

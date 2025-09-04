@@ -12,6 +12,11 @@ import { Youtube } from "@/app/components/Youtube/Youtube";
 export const metadata = {
   title: "Motor Garen Grand KDZ TSI 1200kg para Portones Corredizos | Deneb Tecnología",
   description: "Potente motor Garen Grand KDZ TSI para portones corredizos de hasta 1200kg. Ideal para uso superintensivo y con velocidad de 3m en 6s. Conoce este motor industrial y para condominios.",
+  openGraph: {
+    title: "Motor Garen Grand KDZ TSI 1200kg para Portones Corredizos | Deneb Tecnología",
+    description: "Potente motor Garen Grand KDZ TSI para portones corredizos de hasta 1200kg. Ideal para uso superintensivo y con velocidad de 3m en 6s. Conoce este motor industrial y para condominios.",
+    images: ["/images/grandkdz.webp"],
+  },
 };
 
 export default function MotorGarenGrandKdzTsi1200kg() {

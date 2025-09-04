@@ -12,6 +12,11 @@ import { Youtube } from "@/app/components/Youtube/Youtube";
 export const metadata = {
     title: "Motor Liftmaster 1/2 HP para Portones Basculantes | Deneb Tecnología",
     description: "Descubre el motor Liftmaster 1210E de 1/2 HP, un motor potente y confiable para puertas de garaje basculantes. Conoce sus especificaciones técnicas, accesorios y beneficios para automatizar tu hogar.",
+    openGraph: {
+    title: "Motor Liftmaster 1/2 HP para Portones Basculantes | Deneb Tecnología",
+    description: "Descubre el motor Liftmaster 1210E de 1/2 HP, un motor potente y confiable para puertas de garaje basculantes. Conoce sus especificaciones técnicas, accesorios y beneficios para automatizar tu hogar.",
+    images: ["/images/81550-1.webp"],
+  },
 };
 
 export default function MotorLiftmaster1y2hp() {

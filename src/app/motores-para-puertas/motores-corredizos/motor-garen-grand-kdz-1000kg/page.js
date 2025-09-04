@@ -12,6 +12,11 @@ import { Youtube } from "@/app/components/Youtube/Youtube";
 export const metadata = {
   title: "Motor Garen Grand KDZ 1000kg para Portones Corredizos | Deneb Tecnología",
   description: "Potente motor Garen Grand KDZ para portones corredizos de hasta 1000kg. Ideal para uso superintensivo con 60 ciclos/hora. Ofrecemos instalación, soporte y durabilidad garantizada en Ecuador.",
+  openGraph: {
+    title: "Motor Garen Grand KDZ 1000kg para Portones Corredizos | Deneb Tecnología",
+    description: "Potente motor Garen Grand KDZ para portones corredizos de hasta 1000kg. Ideal para uso superintensivo con 60 ciclos/hora. Ofrecemos instalación, soporte y durabilidad garantizada en Ecuador.",
+    images: ["/images/grandkdz.webp"],
+  },
 };
 
 export default function MotorGarenGrandKdz1000kg() {

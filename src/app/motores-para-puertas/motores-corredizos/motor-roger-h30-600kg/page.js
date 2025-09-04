@@ -12,6 +12,11 @@ import { Youtube } from "@/app/components/Youtube/Youtube";
 export const metadata = {
   title: "Motor Roger H30 600kg para Portones Corredizos | Deneb Tecnología",
   description: "Descubre el potente motor Roger Sliding Gates Serie H30, ideal para portones corredizos de hasta 600kg. Con tarjeta de control inteligente y diseñado para uso intensivo.",
+  openGraph: {
+    title: "Motor Roger H30 600kg para Portones Corredizos | Deneb Tecnología",
+    description: "Descubre el potente motor Roger Sliding Gates Serie H30, ideal para portones corredizos de hasta 600kg. Con tarjeta de control inteligente y diseñado para uso intensivo.",
+    images: ["/images/motorroger600kgintensivo.webp"],
+  },
 };
 
 export default function MotorRogerH30600kg() {

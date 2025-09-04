@@ -12,6 +12,11 @@ import { Youtube } from "@/app/components/Youtube/Youtube";
 export const metadata = {
   title: "Motor Roger Serie BH30 para Portones Corredizos de 600kg | Deneb Tecnología",
   description: "Descubre el motor Roger Serie BH30 para portones corredizos de hasta 600kg. Ideal para uso superintensivo, con tecnología inteligente, baterías de respaldo y un diseño robusto de alta gama.",
+  openGraph: {
+    title: "Motor Roger Serie BH30 para Portones Corredizos de 600kg | Deneb Tecnología",
+    description: "Descubre el motor Roger Serie BH30 para portones corredizos de hasta 600kg. Ideal para uso superintensivo, con tecnología inteligente, baterías de respaldo y un diseño robusto de alta gama.",
+    images: ["/images/motorroger600kgintensivo.webp"],
+  },
 };
 
 export default function MotorRogerbh30600kg() {

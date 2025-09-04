@@ -12,6 +12,11 @@ import { Youtube } from "@/app/components/Youtube/Youtube";
 export const metadata = {
     title: "Motor Roger Serie BE20-400 para Portones Batientes | Deneb Tecnología",
     description: "Descubre el motor Roger Serie BE20-400, un equipo digital e inteligente para portones batientes. Diseñado para uso superintensivo (1000 ciclos/día), automatiza hojas de hasta 4 metros de ancho.",
+    openGraph: {
+    title: "Motor Roger Serie BE20-400 para Portones Batientes | Deneb Tecnología",
+    description: "Descubre el motor Roger Serie BE20-400, un equipo digital e inteligente para portones batientes. Diseñado para uso superintensivo (1000 ciclos/día), automatiza hojas de hasta 4 metros de ancho.",
+    images: ["/images/roger-batiente.webp"],
+  },
 };
 
 

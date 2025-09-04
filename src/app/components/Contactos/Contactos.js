@@ -10,6 +10,7 @@ export const Contactos = () => {
   const [formData, setFormData] = useState({
     nombre: "",
     correo: "",
+    telefono: "",
     mensaje: "",
   });
 
@@ -43,7 +44,7 @@ export const Contactos = () => {
       if (response.ok) {
         setResponseMessage(data.message || "Mensaje enviado exitosamente.");
         setIsSuccess(true);
-        setFormData({ nombre: "", correo: "", mensaje: "" });
+        setFormData({ nombre: "", correo: "", telefono: "", mensaje: "" });
       } else {
         setResponseMessage(data.message || "Error al enviar el mensaje.");
         setIsSuccess(false);
@@ -82,13 +83,13 @@ export const Contactos = () => {
               </a>
             </p>
             <p className="mb-2">📍 <strong>Dirección:</strong> Guayaquil, Ecuador</p>
-            <div className="mt-4">
+            <div className="mt-4 flex gap-4">
               {/* WhatsApp */}
               <a
                 href="https://wa.link/4ajisn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-green-500 hover:text-green-600 text-2xl"
+                className="text-green-500 hover:text-green-600 text-2xl"
                 aria-label="Abrir chat de WhatsApp"
               >
                 <FontAwesomeIcon icon={faWhatsapp} size="lg" />
@@ -103,7 +104,6 @@ export const Contactos = () => {
               >
                 <FontAwesomeIcon icon={faFacebook} size="lg" />
               </a>
-
               {/* TikTok */}
               <a
                 href="https://www.tiktok.com/@denebtecnologia?_t=ZM-8zQZUeM5cHO&_r=1"
@@ -144,6 +144,20 @@ export const Contactos = () => {
                   value={formData.correo}
                   onChange={handleChange}
                   required
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+              {/* Teléfono */}
+              <div>
+                <label htmlFor="telefono" className="block font-medium mb-1">
+                  Teléfono
+                </label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  value={formData.telefono}
+                  onChange={handleChange}
                   className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500"
                 />
               </div>

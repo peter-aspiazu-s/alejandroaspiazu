@@ -12,6 +12,11 @@ import { Youtube } from "@/app/components/Youtube/Youtube";
 export const metadata = {
     title: "Motores para Puertas Enrollables Elsamec UNIKO y GULLIVER | Deneb Tecnología",
     description: "Descubre los motores enrollables Elsamec de origen italiano, con modelos como el UNIKO y GULLIVER, diseñados para adaptarse a puertas de cualquier tamaño. ¡Automatiza tu puerta con la mejor tecnología!",
+    openGraph: {
+    title: "Motores para Puertas Enrollables Elsamec UNIKO y GULLIVER | Deneb Tecnología",
+    description: "Descubre los motores enrollables Elsamec de origen italiano, con modelos como el UNIKO y GULLIVER, diseñados para adaptarse a puertas de cualquier tamaño. ¡Automatiza tu puerta con la mejor tecnología!",
+    images: ["/images/uniko-1m.webp"],
+  },
 };
 
 export default function MotorElsamecUnikoGulliver() {

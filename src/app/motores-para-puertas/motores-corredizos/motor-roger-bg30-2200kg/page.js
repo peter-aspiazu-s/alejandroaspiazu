@@ -12,6 +12,11 @@ import { Youtube } from "@/app/components/Youtube/Youtube";
 export const metadata = {
   title: "Motor Roger Serie BG30 para Portones Corredizos de Gran Peso | Deneb Tecnología",
   description: "Conoce el motor Roger Serie BG30 para portones corredizos de 1000kg a 2200kg. Tecnología italiana Brushless, uso superintensivo e inteligente para la automatización de accesos en Ecuador.",
+  openGraph: {
+    title: "Motor Roger Serie BG30 para Portones Corredizos de Gran Peso | Deneb Tecnología",
+    description: "Conoce el motor Roger Serie BG30 para portones corredizos de 1000kg a 2200kg. Tecnología italiana Brushless, uso superintensivo e inteligente para la automatización de accesos en Ecuador.",
+    images: ["/images/roger.webp"],
+  },
 };
 
 export default function MotorRogerbg302200kg() {
