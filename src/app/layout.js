@@ -16,7 +16,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Deneb Tecnología | Motores para Portones Automáticos",
+  description: "Automatiza tu portón con nuestros motores para puertas batientes, corredizas, abatibles y enrollables. Ofrecemos soluciones de calidad y seguridad para tu hogar y negocio.",
+  openGraph: {
+    title: "Deneb Tecnología | Motores para Portones Automáticos",
     description: "Automatiza tu portón con nuestros motores para puertas batientes, corredizas, abatibles y enrollables. Ofrecemos soluciones de calidad y seguridad para tu hogar y negocio.",
+    images: ["/images/banner-home.webp"],
+  },
 };
 
 export default function RootLayout({ children }) {

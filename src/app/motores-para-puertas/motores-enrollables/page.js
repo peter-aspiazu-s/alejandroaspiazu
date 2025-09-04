@@ -13,6 +13,11 @@ import { Youtube } from "@/app/components/Youtube/Youtube";
 export const metadata = {
   title: "Motores para Puertas Enrollables | Deneb Tecnología",
   description: "Automatiza tu negocio con motores para puertas enrollables. Ofrecemos soluciones de seguridad y comodidad, ideales para tiendas y locales comerciales. Envío e instalación en Ecuador.",
+  openGraph: {
+    title: "Motores para Puertas Enrollables | Deneb Tecnología",
+    description: "Automatiza tu negocio con motores para puertas enrollables. Ofrecemos soluciones de seguridad y comodidad, ideales para tiendas y locales comerciales. Envío e instalación en Ecuador.",
+    images: ["/images/banner-home.webp"],
+  },
 };
 
 
