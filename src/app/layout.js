@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Script from 'next/script';
 
 // app/layout.js o tu componente de layout principal
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -27,6 +28,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Aquí agregamos el script de Google Ads */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-821596414"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-script" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-821596414');
+          `}
+        </Script>
+      </head>
       <body className={inter.className}>
         <Nav />
         {children}
