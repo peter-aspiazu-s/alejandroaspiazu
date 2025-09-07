@@ -11,7 +11,7 @@ export const Whatsapp = () => {
     // La función se encarga de registrar la conversión y luego redirigir.
     gtag_report_conversion('https://wa.link/4ajisn');
   };
-
+  
   return (
     // Contenedor del botón flotante con clases de Tailwind
     <div className="fixed bottom-5 right-5 z-50">
