@@ -54,6 +54,8 @@ export const TipoMotor = ({titulo, descripcion, tituloResidencial, descripcionRe
                       fill
                       className="object-contain rounded-lg"
                       priority={idx === 0}
+                      // Se ha optimizado la propiedad sizes para que coincida con el diseño de la grilla
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
                 </SwiperSlide>
