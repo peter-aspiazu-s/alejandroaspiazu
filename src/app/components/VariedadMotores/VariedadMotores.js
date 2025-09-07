@@ -25,11 +25,12 @@ export const VariedadMotores = ({motores, tituloMotores, descripcionMotores}) =>
                 <Image
                   src={motor.imagen}
                   alt={motor.alt}
-                  fill
-                  className="object-contain rounded-lg"
+                  width={320}
+                  height={320}
+                  className="w-full h-full object-contain rounded-lg"
                   priority={index === 0}
                   // Se ha optimizado la propiedad sizes para que coincida con el diseño de la grilla
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  // sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
