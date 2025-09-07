@@ -1,12 +1,8 @@
 "use client"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation, Pagination } from "swiper/modules"
 
 import Image from "next/image"
 
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
+import { SwiperContainer, SwiperSlide } from "../SwiperContainer/SwiperContainer"
 
 const images = [
   { src: "/images/banner-home.webp", alt: "Beneficio 1" },
@@ -22,13 +18,7 @@ export const Beneficios = () => {
         
         {/* Carrusel de imágenes */}
         <div className="w-full">
-          <Swiper
-            modules={[Navigation, Pagination]}
-            navigation
-            pagination={{ clickable: true }}
-            loop
-            className="rounded-lg shadow-lg"
-          >
+          <SwiperContainer className="rounded-lg shadow-lg">
             {images.map((img, idx) => (
               <SwiperSlide key={idx}>
                 <div className="relative w-full h-full flex justify-center items-center">
@@ -44,7 +34,7 @@ export const Beneficios = () => {
                 </div>
               </SwiperSlide>
             ))}
-          </Swiper>
+          </SwiperContainer>
         </div>
 
         {/* Texto de beneficios */}

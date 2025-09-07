@@ -1,12 +1,8 @@
 "use client"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation, Pagination } from "swiper/modules"
 
 import Image from "next/image"
 
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
+import { SwiperContainer, SwiperSlide } from "../SwiperContainer/SwiperContainer"
 
 const images = [
   { src: "/images/roger.webp", alt: "Motor Corredizo ROGER" },
@@ -54,13 +50,7 @@ export const Motores = () => {
 
         {/* Carrusel con Swiper */}
         <div className="w-full">
-          <Swiper
-            modules={[Navigation, Pagination]}
-            navigation
-            pagination={{ clickable: true }}
-            loop
-            className="rounded-lg shadow-lg h-80 md:h-96"
-          >
+          <SwiperContainer className="rounded-lg shadow-lg h-80 md:h-96">
             {images.map((img, idx) => (
               <SwiperSlide key={idx}>
                 <div className="relative w-full h-full flex justify-center items-center">
@@ -76,7 +66,7 @@ export const Motores = () => {
                 </div>
               </SwiperSlide>
             ))}   
-          </Swiper>
+          </SwiperContainer>
         </div>
 
       </div>

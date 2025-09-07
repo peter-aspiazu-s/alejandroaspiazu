@@ -1,11 +1,7 @@
 "use client"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation, Pagination } from "swiper/modules"
 import Image from "next/image"
 
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
+import { SwiperContainer, SwiperSlide } from "../SwiperContainer/SwiperContainer"
 
 // Ejemplo: podrías separar imágenes para residencial e industrial
 
@@ -38,11 +34,7 @@ export const TipoMotor = ({titulo, descripcion, tituloResidencial, descripcionRe
 
           {/* Slider */}
           <div className="w-full">
-            <Swiper
-              modules={[Navigation, Pagination]}
-              navigation
-              pagination={{ clickable: true }}
-              loop
+            <SwiperContainer
               className="rounded-lg shadow-lg h-80 md:h-96"
             >
               {imagesResidencial.map((img, idx) => (
@@ -60,7 +52,7 @@ export const TipoMotor = ({titulo, descripcion, tituloResidencial, descripcionRe
                   </div>
                 </SwiperSlide>
               ))}
-            </Swiper>
+            </SwiperContainer>
           </div>
         </div>
 
@@ -68,11 +60,7 @@ export const TipoMotor = ({titulo, descripcion, tituloResidencial, descripcionRe
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Slider primero en desktop */}
           <div className="order-2 md:order-1 w-full">
-            <Swiper
-              modules={[Navigation, Pagination]}
-              navigation
-              pagination={{ clickable: true }}
-              loop
+            <SwiperContainer
               className="rounded-lg shadow-lg h-80 md:h-96"
             >
               {imagesIndustrial.map((img, idx) => (
@@ -88,7 +76,7 @@ export const TipoMotor = ({titulo, descripcion, tituloResidencial, descripcionRe
                   </div>
                 </SwiperSlide>
               ))}
-            </Swiper>
+            </SwiperContainer>
           </div>
 
           {/* Texto */}
