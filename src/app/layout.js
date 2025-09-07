@@ -2,8 +2,8 @@ import { Inter } from "next/font/google";
 import Script from 'next/script';
 
 // app/layout.js o tu componente de layout principal
-import { config } from '@fortawesome/fontawesome-svg-core';
-config.autoAddCss = false;
+// import { config } from '@fortawesome/fontawesome-svg-core';
+// config.autoAddCss = false;
 
 // El resto de tu código de layout...
 import "./globals.css";
