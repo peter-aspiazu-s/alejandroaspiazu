@@ -24,7 +24,6 @@ export const metadata = {
 // Se han importado los componentes con carga diferida
 const DynamicTipoMotor = dynamic(() => import('@/app/components/TipoMotor/TipoMotor').then((mod) => mod.TipoMotor), { ssr: false });
 const DynamicVariedadMotores = dynamic(() => import('@/app/components/VariedadMotores/VariedadMotores').then((mod) => mod.VariedadMotores), { ssr: false });
-const DynamicInstalacionMotor = dynamic(() => import('@/app/components/InstalacionMotor/InstalacionMotor').then((mod) => mod.InstalacionMotor), { ssr: false });
 
 
 const imagesResidencialCorredizos = [
@@ -118,7 +117,7 @@ export default function MotoresCorredizos() {
       <DynamicVariedadMotores motores={motores} tituloMotores={"Las mejores reseñas de motores para portones corredizos"} descripcionMotores={"Hemos preparado una ficha técnica detallada para cada motor, donde podrás conocer todas sus especificaciones y características, facilitando tu decisión de compra."} />
       <CallToAction />
       <Beneficios />
-      <DynamicInstalacionMotor tituloInstalacion={"¿Cómo Instalar un motor para portones corredizos?"} descripcionInstalacion={"En este video puedes ver cómo se instalan estos equipos, recuerda que la instalación es similar, pero la configuración dependerá de la marca que tengas."} urlInstalacion={"https://www.youtube.com/watch?v=RuCEL3W5ouY"} titleVideoInstalacion={"Instalación de motor para portón corredizo"} />
+      <InstalacionMotor tituloInstalacion={"¿Cómo Instalar un motor para portones corredizos?"} descripcionInstalacion={"En este video puedes ver cómo se instalan estos equipos, recuerda que la instalación es similar, pero la configuración dependerá de la marca que tengas."} urlInstalacion={"https://www.youtube.com/watch?v=RuCEL3W5ouY"} titleVideoInstalacion={"Instalación de motor para portón corredizo"} />
       <TrabajosRealizados />
       <Contactos />
       <Youtube />
