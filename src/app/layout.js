@@ -13,7 +13,7 @@ import { Nav } from "./components/Nav/Nav";
 import { Whatsapp } from "./components/Whatsapp/Whatsapp";
 import { Footer } from "./components/Footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata = {
   title: "Deneb Tecnología | Motores para Portones Automáticos",
