@@ -31,15 +31,14 @@ export const Beneficios = () => {
           >
             {images.map((img, idx) => (
               <SwiperSlide key={idx}>
-                <div className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[380px] xl:h-[380px] m-auto">
+                <div className="relative w-full h-full flex justify-center items-center">
                   <Image
                     src={img.src}
                     alt={img.alt}
                     width={400}
                     height={400}
-                    className="rounded-lg"
-                    priority={idx === 0} // optimiza la primera
-                    // La propiedad sizes se ha actualizado para coincidir con las dimensiones de Tailwind
+                    className="rounded-lg object-contain"
+                    priority={idx === 0}
                     sizes="(max-width: 768px) 250px, (max-width: 1024px) 300px, (max-width: 1280px) 350px, 380px"
                   />
                 </div>

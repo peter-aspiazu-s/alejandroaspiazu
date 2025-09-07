@@ -70,13 +70,13 @@ export const CategoriasMotores = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {categories.map((category, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-72 md:w-80 h-[450px] md:h-[450px] m-auto">
-              <div className="relative w-64 h-48 md:w-72 md:h-52 bg-gray-100 m-auto mb-5">
+              <div className="relative w-full h-full flex justify-center items-center">
                 <Image
                   src={category.src}
                   alt={category.alt}
-                  width={400}
-                  height={400}
-                  className="rounded-lg"
+                  width={300}
+                  height={250}
+                  className="rounded-lg object-contain"
                   // Se ha optimizado la propiedad sizes para que coincida con los anchos fijos del contenedor.
                   sizes="(max-width: 768px) 256px, 288px"
                   priority={index === 0}
