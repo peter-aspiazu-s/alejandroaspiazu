@@ -3,7 +3,6 @@ import Script from 'next/script';
 
 // app/layout.js o tu componente de layout principal
 import { config } from '@fortawesome/fontawesome-svg-core';
-import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
 // El resto de tu código de layout...
