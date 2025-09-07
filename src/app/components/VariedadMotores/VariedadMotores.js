@@ -27,6 +27,7 @@ export const VariedadMotores = ({motores, tituloMotores, descripcionMotores}) =>
                   alt={motor.alt}
                   fill
                   className="object-contain rounded-lg"
+                  priority={index === 0}
                   // Se ha optimizado la propiedad sizes para que coincida con el diseño de la grilla
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />

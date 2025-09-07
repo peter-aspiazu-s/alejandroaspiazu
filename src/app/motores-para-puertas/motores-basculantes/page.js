@@ -4,7 +4,7 @@ import { Contactos } from "@/app/components/Contactos/Contactos";
 import { Hero } from "@/app/components/Hero/Hero";
 import { InstalacionMotor } from "@/app/components/InstalacionMotor/InstalacionMotor";
 import { Marcas } from "@/app/components/Marcas/Marcas";
-import { TipoMotor } from "@/app/components/MotoresCorredizos/TipoMotor";
+import { TipoMotor } from "@/app/components/TipoMotor/TipoMotor";
 import { TrabajosRealizados } from "@/app/components/TrabajosRealizados/TrabajosRealizados";
 import { VariedadMotores } from "@/app/components/VariedadMotores/VariedadMotores";
 import { Youtube } from "@/app/components/Youtube/Youtube";
