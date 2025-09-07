@@ -47,7 +47,7 @@ export const TipoMotor = ({titulo, descripcion, tituloResidencial, descripcionRe
             >
               {imagesResidencial.map((img, idx) => (
                 <SwiperSlide key={idx}>
-                  <div className="relative w-full h-80 md:h-96">
+                  <div className="relative w-full h-80 md:h-96 flex justify-center items-center">
                     <Image
                       src={img.src}
                       alt={img.alt}
