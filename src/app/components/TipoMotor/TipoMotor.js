@@ -55,6 +55,7 @@ export const TipoMotor = ({titulo, descripcion, tituloResidencial, descripcionRe
                       height={400}
                       className="w-full h-full object-contain rounded-lg"
                       priority={idx === 0}
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
                 </SwiperSlide>

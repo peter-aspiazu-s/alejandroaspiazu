@@ -35,7 +35,8 @@ export const Beneficios = () => {
                   <Image
                     src={img.src}
                     alt={img.alt}
-                    layout="fill"
+                    width={400}
+                    height={400}
                     className="rounded-lg"
                     priority={idx === 0} // optimiza la primera
                     // La propiedad sizes se ha actualizado para coincidir con las dimensiones de Tailwind

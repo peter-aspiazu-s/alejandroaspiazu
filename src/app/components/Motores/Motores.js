@@ -12,7 +12,7 @@ const images = [
   { src: "/images/roger.webp", alt: "Motor Corredizo ROGER" },
   { src: "/images/pivo-60.webp", alt: "Motor Batiente Garen" },
   { src: "/images/81550-1.webp", alt: "Motor Basculante Liftmaster" },
-  { src: "/images/uniko1.webp", alt: "Motor de Cadena Uniko 1" },
+  { src: "/images/uniko-1m.webp", alt: "Motor de Cadena Uniko 1" },
 ]
 
 export const Motores = () => {
@@ -67,7 +67,8 @@ export const Motores = () => {
                   <Image
                     src={img.src}
                     alt={img.alt}
-                    layout="fill"
+                    width={400}
+                    height={400}
                     className="rounded-lg"
                     priority={idx === 0} // optimiza la primera
                     // La propiedad sizes se ha actualizado para ser más precisa.
