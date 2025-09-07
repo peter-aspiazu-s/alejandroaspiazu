@@ -70,7 +70,9 @@ export const Motores = () => {
                     layout="fill"
                     className="rounded-lg"
                     priority={idx === 0} // optimiza la primera
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    // La propiedad sizes se ha actualizado para ser más precisa.
+                    // Ahora coincide con las clases de Tailwind del contenedor.
+                    sizes="(max-width: 768px) 250px, (max-width: 1024px) 300px, (max-width: 1280px) 350px, 380px"
                   />
                 </div>
               </SwiperSlide>

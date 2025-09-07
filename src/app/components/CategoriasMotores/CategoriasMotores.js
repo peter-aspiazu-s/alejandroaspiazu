@@ -76,7 +76,8 @@ export const CategoriasMotores = () => {
                   alt={category.alt}
                   fill
                   className="rounded-lg"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                  // Se ha optimizado la propiedad sizes para que coincida con los anchos fijos del contenedor.
+                  sizes="(max-width: 768px) 256px, 288px"
                   priority={index === 0}
                 />
               </div>
