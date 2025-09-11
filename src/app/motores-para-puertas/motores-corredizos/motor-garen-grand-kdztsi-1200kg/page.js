@@ -23,7 +23,7 @@ export default function MotorGarenGrandKdzTsi1200kg() {
     return (
         <>
             <MotorDetalle
-                titulo="Motor Garen Gran KDZ TSI 1000KG"
+                titulo="Motor Garen Gran KDZ TSI 1200KG"
                 categoria="Motor corredizo"
                 descripcion="Este equipo representa una versión mejorada del modelo Gran Kdz, diseñada para manejar portones de hasta 1200 kg. Ideal para condominios y entornos industriales, su capacidad de ciclos continuos garantiza un uso superintensivo. Destaca por su impresionante velocidad, recorriendo 3 metros en tan solo 6 segundos. Con una potencia de 1/2 HP, el motor es compatible con voltajes de 110V y 220V AC."
                 marca="Garen"
@@ -43,6 +43,7 @@ export default function MotorGarenGrandKdzTsi1200kg() {
                     "Funciona ciclos continuos",
                     "Funciona a 110/220 voltios AC.",
                 ]}
+                pdfUrl="/pdf/manual-motor-kdz-tsi-garen.pdf"
             />
             <CallToAction />
             <InstalacionMotor tituloInstalacion={"¿Cómo hacer la Instalación del Motor Grand KDZ?"} descripcionInstalacion={"Antes de instalar el motor, es crucial medir el ancho de la puerta para determinar la cantidad de cremallera necesaria. A continuación, prepare una base para el motor, ya sea de metal o cemento, lo suficientemente elevada para proteger el equipo de la humedad. Una vez que el motor esté en su lugar, mida y fije las cremalleras a la puerta, asegurándose de que engranen perfectamente con la rueda del motor. Por último, localice una toma de corriente de 220V cerca para una conexión limpia y discreta, y así el equipo estará listo para ser configurado."} urlInstalacion={"https://www.youtube.com/watch?v=9uFOTN4zMB0"} titleVideoInstalacion={"Instalacion de motor Niid Garen"} />

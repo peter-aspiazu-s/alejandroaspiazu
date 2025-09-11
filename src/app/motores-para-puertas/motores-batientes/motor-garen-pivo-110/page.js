@@ -43,6 +43,7 @@ Considerado un equipo de uso superintensivo, puede ser utilizado hasta 35 veces 
                     "Funciona 35 ciclos/hora",
                     "Trabaja a 110V",
                 ]}
+                pdfUrl="/pdf/manual-motor-pivo-garen.pdf"
             />
             <CallToAction />
             <InstalacionMotor tituloInstalacion={"¿Cómo funciona el Motor Pivo 1.10?"} descripcionInstalacion={"En este video puedes ver como funciona el motor de brazos"} urlInstalacion={"https://www.youtube.com/watch?v=liQsu40Zq3I"} titleVideoInstalacion={"Motor pivotante Garen"} />

@@ -44,6 +44,7 @@ export default function MotorElsamecUnikoGulliver() {
                     "Torque 177 Nm",
                     "Capacidad 180 Kg / 170 Kg",
                 ]}
+                pdfUrl="/pdf/manual-motor-uniko1m-elsamec.pdf"
             />
             <DetallesTecnicosMotor
                 titulo="Características Técnicas del Motor UNIKO 2M"

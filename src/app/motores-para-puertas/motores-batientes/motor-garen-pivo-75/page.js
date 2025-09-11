@@ -40,6 +40,7 @@ export default function MotorGarenPivo75() {
                     "Funciona 25 ciclos/hora",
                     "Trabaja a 110V",
                 ]}
+                pdfUrl="/pdf/manual-motor-pivo-garen.pdf"
             />
             <CallToAction />
             <InstalacionMotor tituloInstalacion={"¿Cómo funciona el Motor Pivo 0.75?"} descripcionInstalacion={"En este video puedes ver como funciona el motor de brazos"} urlInstalacion={"https://www.youtube.com/watch?v=liQsu40Zq3I"} titleVideoInstalacion={"Motor pivotante Garen"} />

@@ -41,6 +41,7 @@ Su instalación y programación es super-fácil, ya que su sistema de rieles le 
                     "Uso Residencial",
                     "Acepta hasta 8 Controles Remotos",
                 ]}
+                pdfUrl="/pdf/manual-motor-craftsman.pdf"
             />
             <CallToAction />
             <InstalacionMotor tituloInstalacion={"¿Cómo instalar un motor para puerta de garaje basculante?"} descripcionInstalacion={"Comprender el proceso de instalación te permite verificar si el trabajo de un técnico fue bien hecho. Además, si te animas, puedes considerar instalar el motor por tu cuenta y ahorrar el costo de la mano de obra. Es vital recordar que no todos los motores de cadena son iguales; aunque el proceso sea similar, siempre es mejor buscar un tutorial específico para el modelo que adquiriste."} urlInstalacion={"https://www.youtube.com/watch?v=pyJkVShx5jQ"} titleVideoInstalacion={"Instalación de motor para puerta levadiza o basculante"} />
