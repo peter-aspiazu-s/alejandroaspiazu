@@ -30,6 +30,7 @@ const imagesResidencialCorredizos = [
   { src: "/images/kdz500kg.webp", alt: "Motor Corredizo KDZ 500KG GAREN" },
   { src: "/images/roger600kgresidencial.webp", alt: "Motor Corredizo Roger 600kg" },
   { src: "/images/ditec400kgresidencial.webp", alt: "Motor Corredizo Ditec 400kg" },
+  { src: "/images/accessmatic-pitbull-400.webp", alt: "Motor Corredizo AccessMatic Pitbull 400" },
 ]
 
 const imagesIndustrialCorredizos = [
@@ -39,6 +40,18 @@ const imagesIndustrialCorredizos = [
 
 
 const motores = [
+    {
+      titulo: "Motor AccessMatic PITBULL400 400kg",
+      imagen: "/images/accessmatic-pitbull-400.webp",
+      alt: "Motor AccessMatic PITBULL400 400kg",
+      enlace: "/motores-para-puertas/motores-corredizos/motor-accessmatic-pitbull-400kg"
+    },
+    {
+      titulo: "Motor Elite Slide400 400kg",
+      imagen: "/images/elite-slide400.webp",
+      alt: "Motor Elite Slide400 400kg",
+      enlace: "/motores-para-puertas/motores-corredizos/motor-elite-slide-400kg"
+    },
     {
       titulo: "Motor Roger H30 600kg",
       imagen: "/images/roger.webp",
@@ -92,6 +105,12 @@ const motores = [
       imagen: "/images/grandkdz.webp",
       alt: "Motor Gran KDZtsi Garen 1200kg",
       enlace: "/motores-para-puertas/motores-corredizos/motor-garen-grand-kdztsi-1200kg"
+    },
+    {
+      titulo: "Motor BFT Icaro Smart AC A 2000kg",
+      imagen: "/images/icaro-smart-ac-a-2000.webp",
+      alt: "Motor Icaro Smart AC A 2000kg",
+      enlace: "/motores-para-puertas/motores-corredizos/motor-bft-icaro-smart-ac-a-2000kg"
     },
     {
       titulo: "Motor Roger BG30 (1600kg – 2200kg)",
