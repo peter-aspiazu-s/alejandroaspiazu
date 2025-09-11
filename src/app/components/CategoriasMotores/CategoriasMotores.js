@@ -24,8 +24,8 @@ const categories = [
     href: "/motores-para-puertas/motores-batientes",
   },
   {
-    src: "/images/motor-enrollable.jpeg",
-    alt: "Motores Puertas Enrollables",
+    src: "/images/motorenrollable_800x.webp",
+    alt: "Motores Puertas Enrollables", 
     title: "Motores Puertas Enrollables",
     description: "Ideales para locales comerciales e industrias, resistentes y seguros.",
     href: "/motores-para-puertas/motores-enrollables",

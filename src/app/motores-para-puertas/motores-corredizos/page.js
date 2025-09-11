@@ -31,11 +31,13 @@ const imagesResidencialCorredizos = [
   { src: "/images/roger600kgresidencial.webp", alt: "Motor Corredizo Roger 600kg" },
   { src: "/images/ditec400kgresidencial.webp", alt: "Motor Corredizo Ditec 400kg" },
   { src: "/images/accessmatic-pitbull-400.webp", alt: "Motor Corredizo AccessMatic Pitbull 400" },
+  { src: "/images/elite-slide400.webp", alt: "Motor Corredizo Elite Slide 400" },
 ]
 
 const imagesIndustrialCorredizos = [
   { src: "/images/grandkdz1000kgindustrial.webp", alt: "Motor Corredizo Grand KDZ 1000kg" },
   { src: "/images/motorroger600kgintensivo.webp", alt: "Motor de Cadena Uniko 1" },
+  { src: "/images/icaro-smart-ac-a-2000.webp", alt: "Motor Corredizo BFT Icaro Smart AC A 2000" },
 ]
 
 
