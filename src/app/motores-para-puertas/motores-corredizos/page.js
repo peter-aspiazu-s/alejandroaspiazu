@@ -123,7 +123,7 @@ const motores = [
 export default function MotoresCorredizos() {
   return (
     <>
-      <Hero titulo={"Motores para Portones Corredizos"} subtitulo={"Solución de automatización para portones corredizos. Estos sistemas se adaptan a diversos tamaños y pesos, y se distinguen por operar mediante un mecanismo de cremallera."} imagen={"/images/porton-corredizo-automatico.jpg"} />
+      <Hero titulo={"Motores para Portones Corredizos"} subtitulo={"Solución de automatización para portones corredizos. Estos sistemas se adaptan a diversos tamaños y pesos, y se distinguen por operar mediante un mecanismo de cremallera."} imagen={"/images/porton-corredizo-automatico.webp"} />
       <DynamicTipoMotor titulo={"¿Qué motor para portón corredizo es el ideal?"} descripcion={"Para determinar la mejor opción, es crucial considerar el peso, el tamaño y la intensidad de uso de la puerta. Estos factores nos permiten ofrecer la solución más adecuada a cada cliente. A continuación, mostramos los precios de nuestros motores más vendidos, organizados por sus capacidades."} 
         tituloResidencial={"Motores Corredizos para Hogar – Residencial"}
         descripcionResidencial={"Estos motores son ideales para portones con un uso moderado o intermitente, como en residencias o en comunidades cerradas. Son una opción confiable y eficiente para puertas que no requieren ciclos de apertura y cierre constantes."}
