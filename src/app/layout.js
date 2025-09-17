@@ -39,22 +39,23 @@ export default function RootLayout({ children }) {
           `}
         </Script>
         {/* El nuevo script para la conversión de clic */}
-        <Script id="google-ads-conversion" strategy="afterInteractive">
-          {`
-            function gtag_report_conversion(url) {
-              var callback = function () {
-                if (typeof(url) != 'undefined') {
-                  window.location = url;
-                }
-              };
-              gtag('event', 'conversion', {
-                'send_to': 'AW-821596414/zLl1CLi7jrYBEP6h4ocD',
-                'event_callback': callback
-              });
-              return false;
-            }
-          `}
-        </Script>
+{/*         <Script id="google-ads-conversion" strategy="afterInteractive">
+          {`
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  // CAMBIO CLAVE: Abre el enlace en una nueva ventana/pestaña
+                  window.open(url, '_blank');
+                }
+              };
+              gtag('event', 'conversion', {
+                'send_to': 'AW-821596414/zLl1CLi7jrYBEP6h4ocD',
+                'event_callback': callback
+              });
+              return false;
+            }
+          `}
+        </Script> */}
       </head>
       <body className={inter.className}>
         <Nav />
