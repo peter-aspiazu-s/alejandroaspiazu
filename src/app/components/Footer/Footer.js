@@ -12,7 +12,7 @@ export const Footer = () => {
     e.preventDefault();
     const telUrl = "tel:+593960067820";
     // Etiqueta de conversión específica para las llamadas desde el footer.
-    const conversionLabel = "l3f_CKiK_78CEJm8mI0D";
+    const conversionLabel = "qvaJCKz68JwbEP6h4ocD";
     reportConversion(telUrl, conversionLabel);
   };
 
@@ -21,7 +21,7 @@ export const Footer = () => {
     e.preventDefault();
     const whatsappUrl = "https://wa.link/4ajisn";
     // Etiqueta de conversión específica para el WhatsApp del footer.
-    const conversionLabel = "T8jBCKWK_78CEJm8mI0D";
+    const conversionLabel = "zLl1CLi7jrYBEP6h4ocD";
     reportConversion(whatsappUrl, conversionLabel);
   };
 

@@ -1,7 +1,5 @@
 import { Inter } from "next/font/google";
 import Script from 'next/script';
-
-// El resto de tu código de layout...
 import "./globals.css";
 
 import { Nav } from "./components/Nav/Nav";
@@ -38,24 +36,6 @@ export default function RootLayout({ children }) {
             gtag('config', 'AW-821596414');
           `}
         </Script>
-        {/* El nuevo script para la conversión de clic */}
-{/*         <Script id="google-ads-conversion" strategy="afterInteractive">
-          {`
-            function gtag_report_conversion(url) {
-              var callback = function () {
-                if (typeof(url) != 'undefined') {
-                  // CAMBIO CLAVE: Abre el enlace en una nueva ventana/pestaña
-                  window.open(url, '_blank');
-                }
-              };
-              gtag('event', 'conversion', {
-                'send_to': 'AW-821596414/zLl1CLi7jrYBEP6h4ocD',
-                'event_callback': callback
-              });
-              return false;
-            }
-          `}
-        </Script> */}
       </head>
       <body className={inter.className}>
         <Nav />

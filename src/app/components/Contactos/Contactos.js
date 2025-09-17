@@ -63,7 +63,7 @@ export const Contactos = () => {
     e.preventDefault();
     const telUrl = 'tel:+593960067820';
     // Etiqueta de conversión específica para las llamadas.
-    const conversionLabel = 'PzD_CMnB-6QCEJm8mI0D'; 
+    const conversionLabel = 'qvaJCKz68JwbEP6h4ocD'; 
     reportConversion(telUrl, conversionLabel);
   };
 
@@ -72,7 +72,7 @@ export const Contactos = () => {
     e.preventDefault();
     const whatsappUrl = 'https://wa.link/4ajisn';
     // Etiqueta de conversión específica para el WhatsApp del Contactos.
-    const conversionLabel = 'p6k4COXK-6QCEJm8mI0D'; 
+    const conversionLabel = 'zLl1CLi7jrYBEP6h4ocD'; 
     reportConversion(whatsappUrl, conversionLabel);
   };
 
